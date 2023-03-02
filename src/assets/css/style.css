@@ -11,12 +11,33 @@
     background-color: #1d1d1d;
 }
 
+p {
+    font-size: 1.25rem;
+}
+
 .main-container {
     min-height: 85vh;
     color: #e6e6e6;
 }
 
+.heading,
+.subheading {
+    color: #9ef01a;
+}
+
 .heading {
     font-size: 5rem;
-    color: #9ef01a;
+}
+
+.subheading {
+    font-size: 3rem;
+}
+
+.skill-container {
+    width: fit-content;
+    margin: 0 1rem;
+}
+
+.skill-image {
+    width: 100px;
 }
