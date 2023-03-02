@@ -1,0 +1,18 @@
+.footer-container {
+    background-color: #212529;
+    color: #e6e6e6;
+}
+
+.footer-link {
+    color: #e6e6e6;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: #9ef01a;
+}
+
+.footer-social-icon {
+    font-size: 2.5rem;
+    margin-left: .5rem;
+}

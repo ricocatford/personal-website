@@ -1,9 +1,9 @@
 import React from "react";
-import { Routes, Route, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
+import Container from 'react-bootstrap/Container';
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import About from "./pages/About";
+import Footer from "./components/Footer";
 
 import "./assets/css/style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -12,9 +12,10 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <div>
+      <Container>
         <Outlet />
-      </div>
+      </Container>
+      <Footer />
     </>
   )
 }

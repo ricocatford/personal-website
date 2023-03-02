@@ -1,0 +1,9 @@
+.nav-link {
+    font-size: 1.25rem;
+    color: #e6e6e6;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #9ef01a;
+}
