@@ -1,13 +1,13 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
-import Container from 'react-bootstrap/Container';
+import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "../assets/css/Footer.css"
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../assets/css/Footer.css";
 
-export default function CustomFooter() {
+const CustomFooter = () => {
     return (
         <div className="footer-container">
             <Container className="py-3">
@@ -26,5 +26,7 @@ export default function CustomFooter() {
                 </Row>
             </Container>
         </div>
-    )
+    );
 }
+
+export default CustomFooter;

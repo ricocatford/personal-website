@@ -7,7 +7,7 @@ import beautybay from "../assets/images/beautybay.png";
 
 import "../assets/css/Carousel.css"
 
-export default function CustomCarousel() {
+const CustomCarousel = () => {
   return (
     <Carousel>
       <Carousel.Item>
@@ -46,3 +46,5 @@ export default function CustomCarousel() {
     </Carousel>
   );
 }
+
+export default CustomCarousel;

@@ -1,14 +1,14 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 
-import Container from 'react-bootstrap/Container';
+import Container from "react-bootstrap/Container";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 import "./assets/css/style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-export default function App() {
+const App = () => {
   return (
     <>
       <Navbar />
@@ -19,3 +19,5 @@ export default function App() {
     </>
   )
 }
+
+export default App;

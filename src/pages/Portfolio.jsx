@@ -6,7 +6,7 @@ import Carousel from "../components/Carousel"
 
 import "../assets/css/style.css"
 
-export default function Portfolio() {
+const Portfolio = () => {
     return (
         <Container className="main-container py-3 px-0">
             <Row>
@@ -22,3 +22,5 @@ export default function Portfolio() {
         </Container>
     );
 }
+
+export default Portfolio;

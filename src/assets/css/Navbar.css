@@ -1,9 +1,11 @@
 .nav-link {
     font-size: 1.25rem;
     color: #e6e6e6;
+    transition: all .3s ease-in-out;
 }
 
 .nav-link:hover,
-.nav-link:focus {
+.nav-link:focus,
+.nav-link:active {
     color: #9ef01a;
 }

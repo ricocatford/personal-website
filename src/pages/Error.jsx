@@ -7,7 +7,7 @@ import Col from "react-bootstrap/Col";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-export default function CustomError() {
+const CustomError = () => {
   const error = useRouteError();
   console.error(error);
 
@@ -33,3 +33,5 @@ export default function CustomError() {
     </>
   );
 }
+
+export default CustomError;

@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 
 import "../assets/css/style.css"
 
-export default function Contact() {
+const Contact = () => {
     return (
         <Container className="main-container py-3 px-0">
             <Row>
@@ -17,3 +17,5 @@ export default function Contact() {
         </Container>
     );
 }
+
+export default Contact;

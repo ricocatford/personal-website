@@ -1,4 +1,4 @@
-import Container from 'react-bootstrap/Container';
+import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -14,7 +14,7 @@ import git from "../assets/images/git.png";
 
 import "../assets/css/style.css"
 
-export default function About() {
+const About = () => {
     return (
         <Container className="main-container py-3 px-0">
             <Row>
@@ -46,7 +46,7 @@ export default function About() {
                 </Col>
             </Row>
             <Row>
-                <Col xs={6} sm={6} md={3} lg={2}>
+                <Col xs={6} sm={4} md={3} lg={2}>
                     <div className="skill-container mx-auto">
                         <img src={html} alt="HTML" className="skill-image"/>
                         <p className="text-center">
@@ -54,7 +54,7 @@ export default function About() {
                         </p>
                     </div>
                 </Col>
-                <Col xs={6} sm={6} md={3} lg={2}>
+                <Col xs={6} sm={4} md={3} lg={2}>
                     <div className="skill-container mx-auto">
                         <img src={css} alt="CSS" className="skill-image" />
                         <p className="text-center">
@@ -62,7 +62,7 @@ export default function About() {
                         </p>
                     </div>
                 </Col>
-                <Col xs={6} sm={6} md={3} lg={2}>
+                <Col xs={6} sm={4} md={3} lg={2}>
                     <div className="skill-container mx-auto">
                         <img src={js} alt="JavaScript" className="skill-image" />
                         <p className="text-center">
@@ -70,7 +70,7 @@ export default function About() {
                         </p>
                     </div>
                 </Col>
-                <Col xs={6} sm={6} md={3} lg={2}>
+                <Col xs={6} sm={4} md={3} lg={2}>
                     <div className="skill-container mx-auto">
                         <img src={python} alt="Python" className="skill-image"/>
                         <p className="text-center">
@@ -78,7 +78,7 @@ export default function About() {
                         </p>
                     </div>
                 </Col>
-                <Col xs={6} sm={6} md={3} lg={2}>
+                <Col xs={6} sm={4} md={3} lg={2}>
                     <div className="skill-container mx-auto">
                         <img src={flask} alt="Flask" className="skill-image"/>
                         <p className="text-center">
@@ -86,7 +86,7 @@ export default function About() {
                         </p>
                     </div>
                 </Col>
-                <Col xs={6} sm={6} md={3} lg={2}>
+                <Col xs={6} sm={4} md={3} lg={2}>
                     <div className="skill-container mx-auto">
                         <img src={django} alt="Django" className="skill-image"/>
                         <p className="text-center">
@@ -94,7 +94,7 @@ export default function About() {
                         </p>
                     </div>
                 </Col>
-                <Col xs={6} sm={6} md={3} lg={2}>
+                <Col xs={6} sm={4} md={3} lg={2}>
                     <div className="skill-container mx-auto">
                         <img src={react} alt="ReactJS" className="skill-image"/>
                         <p className="text-center">
@@ -102,7 +102,7 @@ export default function About() {
                         </p>
                     </div>
                 </Col>
-                <Col xs={6} sm={6} md={3} lg={2}>
+                <Col xs={6} sm={4} md={3} lg={2}>
                     <div className="skill-container mx-auto">
                         <img src={nodejs} alt="NodeJS" className="skill-image"/>
                         <p className="text-center">
@@ -110,7 +110,7 @@ export default function About() {
                         </p>
                     </div>
                 </Col>
-                <Col xs={6} sm={6} md={3} lg={2}>
+                <Col xs={6} sm={4} md={3} lg={2}>
                     <div className="skill-container mx-auto">
                             <img src={git} alt="Git" className="skill-image"/>
                             <p className="text-center">
@@ -122,3 +122,5 @@ export default function About() {
         </Container>
     );
 }
+
+export default About;
