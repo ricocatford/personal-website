@@ -1,6 +1,6 @@
 import Col from "react-bootstrap/Col";
 
-import "../assets/css/SkillCard.css"
+import "../assets/css/SkillCard.css";
 
 const SkillCard = (props) => {
     const skills = props.skills;
