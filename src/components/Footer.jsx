@@ -13,7 +13,7 @@ export default function CustomFooter() {
             <Container className="py-3">
                 <Row>
                     <Col className="col-sm-6">
-                        <p>&copy; Copyright 2023 - Ricardo Albarenque</p>
+                        <p className="footer-copyright">&copy; Copyright 2023 - Ricardo Albarenque</p>
                     </Col>
                     <Col className="col-sm-6 d-flex justify-content-end">
                         <Link to="https://www.github.com/ricocatford" target="_blank" className="footer-link">

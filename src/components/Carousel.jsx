@@ -28,7 +28,7 @@ export default function CustomCarousel() {
             Guess the Word
           </h3>
           <p className="carousel-description">
-            A game using two Rest APIs.
+            A game using two RESTful APIs.
           </p>
         </Carousel.Caption>
       </Carousel.Item>

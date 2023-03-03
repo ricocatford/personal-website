@@ -13,6 +13,7 @@
 
 p {
     font-size: 1.25rem;
+    color: #e6e6e6;
 }
 
 .main-container {
@@ -23,6 +24,7 @@ p {
 .heading,
 .subheading {
     color: #9ef01a;
+    margin-bottom: 2rem;
 }
 
 .heading {
