@@ -1,0 +1,38 @@
+{"skills": [
+    {
+        "name": "HTML",
+        "image": "images/skills/html.png"
+    },
+    {
+        "name": "CSS",
+        "image": "images/skills/css.png"
+    },
+    {
+        "name": "JavaScript",
+        "image": "images/skills/js.png"
+    },
+    {
+        "name": "Python",
+        "image": "images/skills/python.png"
+    },
+    {
+        "name": "Flask",
+        "image": "images/skills/flask.png"
+    },
+    {
+        "name": "Django",
+        "image": "images/skills/django.png"
+    },
+    {
+        "name": "ReactJS",
+        "image": "images/skills/reactjs.png"
+    },
+    {
+        "name": "NodeJS",
+        "image": "images/skills/nodejs.png"
+    },
+    {
+        "name": "Git",
+        "image": "images/skills/git.png"
+    }
+]}

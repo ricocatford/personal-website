@@ -8,9 +8,9 @@ const SkillCard = (props) => {
     return (
         <>
             {skills.map((skill) => (
-                <Col xs={6} sm={6} md={3} lg={2}>
-                    <div className="container mx-auto">
-                        <img src={skill.image} alt={skill.name} className="image"/>
+                <Col xs={6} sm={4} md={3} lg={2}>
+                    <div className="skill-container mx-auto">
+                        <img src={skill.image} alt={skill.name} className="skill-image"/>
                         <p className="text-center">
                             {skill.name}
                         </p>
