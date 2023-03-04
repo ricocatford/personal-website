@@ -17,16 +17,16 @@ const CustomNavbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link as={Link} to={"/"} className="nav-link">
+            <Nav.Link as={Link} to={"/"} className="link nav-link">
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to={"portfolio"} className="nav-link">
+            <Nav.Link as={Link} to={"portfolio"} className="link nav-link">
               Portfolio
             </Nav.Link>
-            <Nav.Link as={Link} to={"about"} className="nav-link">
+            <Nav.Link as={Link} to={"about"} className="link nav-link">
               About
             </Nav.Link>
-            <Nav.Link as={Link} to={"contact"} className="nav-link">
+            <Nav.Link as={Link} to={"contact"} className="link nav-link">
               Contact
             </Nav.Link>
           </Nav>

@@ -12,14 +12,14 @@ const CustomFooter = () => {
         <div className="footer-container">
             <Container className="py-3">
                 <Row>
-                    <Col className="col-sm-6">
+                    <Col className="col-sm-6 d-flex align-items-center">
                         <p className="footer-copyright">&copy; Copyright 2023 - Ricardo Albarenque</p>
                     </Col>
-                    <Col className="col-sm-6 d-flex justify-content-end">
-                        <Link to="https://www.github.com/ricocatford" target="_blank" className="footer-link">
+                    <Col className="col-sm-6 d-flex align-items-center justify-content-end">
+                        <Link to="https://www.github.com/ricocatford" target="_blank" className="link">
                             <i className="fa-brands fa-github footer-social-icon" />
                         </Link>
-                        <Link to="https://www.linkedin.com/in/ricardo-albarenque/" target="_blank" className="footer-link">
+                        <Link to="https://www.linkedin.com/in/ricardo-albarenque/" target="_blank" className="link">
                             <i className="fa-brands fa-linkedin footer-social-icon" />
                         </Link>
                     </Col>

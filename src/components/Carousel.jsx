@@ -1,48 +1,36 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import Carousel from "react-bootstrap/Carousel";
-import bonteeth from "../assets/images/bonteeth.png";
-import guesstheword from "../assets/images/guess-the-word.png";
-import beautybay from "../assets/images/beautybay.png";
 
 import "../assets/css/Carousel.css"
 
-const CustomCarousel = () => {
+const CustomCarousel = (props) => {
+  const projects = props.projects;
+
   return (
     <Carousel>
-      <Carousel.Item>
-        <img src={bonteeth} alt="BonTeeth" className="carousel-image" />
-        <Carousel.Caption>
-          <h3 className="carousel-subheading">
-            BonTeeth
-          </h3>
-          <p className="carousel-description">
-            A platform for booking and managing appointments.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img src={guesstheword} alt="Guess the Word" className="carousel-image" />
-        <Carousel.Caption>
-          <h3 className="carousel-subheading">
-            Guess the Word
-          </h3>
-          <p className="carousel-description">
-            A game using two RESTful APIs.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img src={beautybay} alt="BeautyBay" className="carousel-image" />
-        <Carousel.Caption>
-          <h3 className="carousel-subheading">
-            BeautyBay
-          </h3>
-          <p className="carousel-description">
-            A mockup website.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
+      {projects.map(project => (
+        <Carousel.Item key={project.id}>
+          <img src={project.image} alt={project.name} className="carousel-image" />
+          <Carousel.Caption>
+            <h3 className="carousel-heading">
+              {project.name}
+            </h3>
+            <p className="carousel-description">
+              {project.description}
+            </p>
+            <div className="d-flex justify-content-center">
+              <Link to={project.links.repository} target="_blank">
+                <i className="fa-brands fa-github carousel-link" />
+              </Link>
+              <Link to={project.links.live} target="_blank">
+                <i className="fa-solid fa-rocket carousel-link" />
+              </Link>
+            </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+      ))}
     </Carousel>
   );
 }

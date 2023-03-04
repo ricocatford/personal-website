@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 
 import Carousel from "../components/Carousel"
 
-import "../assets/css/style.css"
+import data from "../data/projects.json";
 
 const Portfolio = () => {
     return (
@@ -16,7 +16,7 @@ const Portfolio = () => {
                     </h2>
                 </Col>
                 <Col className="col-sm-12 py-3">
-                    <Carousel />
+                    <Carousel projects={data} />
                 </Col>
             </Row>
         </Container>

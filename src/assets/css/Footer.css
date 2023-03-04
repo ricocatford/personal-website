@@ -3,17 +3,10 @@
     color: #e6e6e6;
 }
 
-.footer-link {
-    color: #e6e6e6;
-}
-
-.footer-link:hover,
-.footer-link:focus {
-    color: #9ef01a;
-}
-
-.footer-copyright {
+.footer-copyright,
+.footer-credits {
     font-size: 1rem;
+    margin-bottom: 0;
 }
 
 .footer-social-icon {

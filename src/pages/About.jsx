@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -5,8 +7,6 @@ import Col from "react-bootstrap/Col";
 import SkillCard from "../components/SkillCard";
 
 import data from "../data/skills.json";
-
-import "../assets/css/style.css"
 
 const About = () => {
     return (
@@ -41,6 +41,11 @@ const About = () => {
             </Row>
             <Row>
                 <SkillCard skills={data} />
+            </Row>
+            <Row>
+                <p className="text-center">
+                    Icons from <Link to="https://www.flaticon.com" target="_blank" className="link">flaticon.com</Link>
+                </p>
             </Row>
         </Container>
     );

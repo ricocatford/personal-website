@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "name": "BonTeeth",
+        "description": "A platform for booking and managing appointments.",
+        "image": "images/projects/bonteeth.png",
+        "links": {
+            "repository": "https://github.com/ricocatford/bonteeth-project",
+            "live": "https://bonteeth.herokuapp.com"
+        }
+    },
+    {
+        "id": 1,
+        "name": "Guess the Word",
+        "description": "A game using 2 RESTful APIs.",
+        "image": "images/projects/guess-the-word.png",
+        "links": {
+            "repository": "https://github.com/ricocatford/guess-the-word",
+            "live": "http://ricodev.me/guess-the-word"
+        }
+    },
+    {
+        "id": 2,
+        "name": "BeautyBay",
+        "description": "A mockup website.",
+        "image": "images/projects/beautybay.png",
+        "links": {
+            "repository": "https://github.com/ricocatford/beautybay",
+            "live": "http://ricodev.me/beautybay"
+        }
+    }
+]
