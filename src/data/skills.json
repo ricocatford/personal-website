@@ -1,4 +1,4 @@
-{"skills": [
+[
     {
         "name": "HTML",
         "image": "images/skills/html.png"
@@ -35,4 +35,4 @@
         "name": "Git",
         "image": "images/skills/git.png"
     }
-]}
+]
