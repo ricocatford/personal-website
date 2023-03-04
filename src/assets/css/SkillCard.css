@@ -6,3 +6,8 @@
 .skill-image {
     width: 100px;
 }
+
+.skill-heading {
+    font-size: 1.25rem;
+    margin: .25rem auto 1rem;
+}

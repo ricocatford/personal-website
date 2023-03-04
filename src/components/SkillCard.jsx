@@ -9,11 +9,11 @@ const SkillCard = (props) => {
         <>
             {skills.map((skill) => (
                 <Col xs={6} sm={4} md={3} lg={2}>
-                    <div className="skill-container mx-auto">
+                    <div className="skill-container mx-auto" key={skill.id}>
                         <img src={skill.image} alt={skill.name} className="skill-image"/>
-                        <p className="text-center">
+                        <h4 className="skill-heading text-center">
                             {skill.name}
-                        </p>
+                        </h4>
                     </div>
                 </Col>
             ))}

@@ -4,13 +4,11 @@ import Col from "react-bootstrap/Col";
 
 import SkillCard from "../components/SkillCard";
 
-import skills from "../data/skills.json";
+import data from "../data/skills.json";
 
 import "../assets/css/style.css"
 
 const About = () => {
-    console.log(skills)
-
     return (
         <Container className="main-container py-3 px-0">
             <Row>
@@ -42,7 +40,7 @@ const About = () => {
                 </Col>
             </Row>
             <Row>
-                <SkillCard skills={skills} />
+                <SkillCard skills={data} />
             </Row>
         </Container>
     );
