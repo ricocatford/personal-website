@@ -11,9 +11,9 @@ const Portfolio = () => {
         <Container className="main-container py-3 px-0">
             <Row>
                 <Col className="col-sm-12 text-center">
-                    <h2 className="heading">
+                    <h1 className="heading">
                         Portfolio
-                    </h2>
+                    </h1>
                 </Col>
                 <Col className="col-sm-12 py-3">
                     <Carousel projects={data} />

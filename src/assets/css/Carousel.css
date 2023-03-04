@@ -23,3 +23,13 @@
 .carousel-link:focus {
     color: #e6e6e6;
 }
+
+@media screen and (max-width: 550px) {
+    .carousel-image {
+        width: 300px;
+    }
+
+    .carousel-heading {
+        font-size: 2rem;
+    }
+}

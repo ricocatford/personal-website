@@ -7,9 +7,9 @@ const Contact = () => {
         <Container className="main-container py-3 px-0">
             <Row>
                 <Col className="col-sm-12 text-center">
-                    <h2 className="heading">
+                    <h1 className="heading">
                         Contact Me
-                    </h2>
+                    </h1>
                 </Col>
             </Row>
         </Container>

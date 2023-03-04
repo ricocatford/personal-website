@@ -14,9 +14,9 @@ const CustomCarousel = (props) => {
         <Carousel.Item key={project.id}>
           <img src={project.image} alt={project.name} className="carousel-image" />
           <Carousel.Caption>
-            <h3 className="carousel-heading">
+            <h2 className="carousel-heading">
               {project.name}
-            </h3>
+            </h2>
             <p className="carousel-description">
               {project.description}
             </p>
