@@ -10,7 +10,7 @@ import "../assets/css/Footer.css";
 const CustomFooter = () => {
     return (
         <div className="footer-container fixed-bottom">
-            <Container className="py-3">
+            <Container>
                 <Row>
                     <Col className="col-sm-6 d-flex align-items-center">
                         <p className="footer-copyright">&copy; Copyright 2023 - Ricardo Albarenque</p>

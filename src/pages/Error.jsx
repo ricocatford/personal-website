@@ -14,9 +14,9 @@ const CustomError = () => {
   return (
     <>
       <Navbar />
-      <Container className="main-container py-3 px-0">
+      <Container className="main-container py-3">
         <Row>
-          <Col className="col-sm-12 py-3 mx-auto text-center">
+          <Col className="col-sm-12 text-center">
             <h1 className="heading">
               Oops! Are you okay?
             </h1>

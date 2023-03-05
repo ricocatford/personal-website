@@ -1,10 +1,10 @@
 .footer-container {
     background-color: #212529;
     color: #e6e6e6;
+    padding: 1rem 0;
 }
 
-.footer-copyright,
-.footer-credits {
+.footer-copyright {
     font-size: 1rem;
     margin-bottom: 0;
 }

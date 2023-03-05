@@ -10,7 +10,7 @@ import data from "../data/skills.json";
 
 const About = () => {
     return (
-        <Container className="main-container py-3 px-0">
+        <Container className="main-container py-3">
             <Row>
                 <Col className="col-sm-12 text-center">
                     <h1 className="heading">
@@ -19,7 +19,12 @@ const About = () => {
                 </Col>
             </Row>
             <Row>
-                <Col className="col-sm-12 col-md-9 mx-auto">
+                <Col className="col-sm-12 d-flex justify-content-center">
+                    <img src="images/rico.jpg" alt="Ricardo Albarenque" className="about-image" />
+                </Col>
+            </Row>
+            <Row>
+                <Col className="col-sm-12 col-md-12 col-lg-9 text-center mx-auto">
                     <p>
                         Hello! My name is Ricardo Albarenque, and I'm based in London. Currently finishing my diploma of Full-Stack Web Development at City of Bristol College. If I'm not coding some App, I'm probably playing drums or videogames.
                     </p>
@@ -31,7 +36,7 @@ const About = () => {
                     </p>
                 </Col>
             </Row>
-            <br />
+            <hr className="divider" />
             <Row>
                 <Col className="col-sm-12 text-center">
                     <h2 className="subheading">
