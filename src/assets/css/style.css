@@ -45,6 +45,18 @@ p {
     color: #9ef01a;
 }
 
+.btn-primary {
+    background-color: #9ef01a;
+    border: none;
+    color: #1d1d1d;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #e6e6e6;
+    color: #1d1d1d;
+}
+
 @media screen and (max-width: 500px) {
     .heading {
         font-size: 3.5rem;

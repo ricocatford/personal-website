@@ -5,6 +5,10 @@ import emailjs from "@emailjs/browser";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Form from "react-bootstrap/Form"
+import Button from "react-bootstrap/Button"
+
+import "../assets/css/style.css"
 
 const Contact = () => {
     const form = useRef();
@@ -35,17 +39,35 @@ const Contact = () => {
                 </Col>
             </Row>
             <Row>
-                <Col className="col-sm-12">
-                    <form ref={form} onSubmit={sendEmail}>
-                        <label>Name</label>
-                        <input type="text" name="user_name" />
-                        <label>Email</label>
-                        <input type="email" name="user_email" />
-                        <label>Message</label>
-                        <textarea name="message" />
-                        <input type="submit" value="Send" />
-                    </form>
+                <Col className="col-sm-12 text-center">
+                    <p className="flow-text mb-5">
+                        Have a question? Please enquire below.
+                    </p>
                 </Col>
+            </Row>
+            <Row>
+                <Form ref={form} onSubmit={sendEmail}>
+                    <Form.Group className="col-sm-12 col-md-4 mb-3 mx-auto" controlId="formBasicEmail">
+                        <Form.Label>Email address</Form.Label>
+                        <Form.Control name="user_email" type="email" placeholder="Enter email" />
+                        <Form.Text className="text-muted">
+                            I'll never share your email with anyone else.
+                        </Form.Text>
+                    </Form.Group>
+                    <Form.Group className="col-sm-12 col-md-4 mb-3 mx-auto" controlId="formBasicUsername">
+                        <Form.Label>Name</Form.Label>
+                        <Form.Control name="user_name" type="text" placeholder="Enter name" />
+                    </Form.Group>
+                    <Form.Group className="col-sm-12 col-md-4 mb-3 mx-auto" controlId="exampleForm.ControlTextarea1">
+                        <Form.Label>Message</Form.Label>
+                        <Form.Control name="message" as="textarea" rows={3} placeholder="Enter message" />
+                    </Form.Group>
+                    <Col className="col-sm-12 col-md-4 mx-auto text-center">
+                        <Button size="lg" variant="primary" type="submit" className="px-5 mx-auto btn-primary">
+                            Send
+                        </Button>
+                    </Col>
+                </Form>
             </Row>
         </Container>
     );
