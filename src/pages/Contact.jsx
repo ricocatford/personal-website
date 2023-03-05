@@ -40,7 +40,7 @@ const Contact = () => {
             </Row>
             <Row>
                 <Col className="col-sm-12 text-center">
-                    <p className="flow-text mb-5">
+                    <p className="flow-text mb-4">
                         Have a question? Please enquire below.
                     </p>
                 </Col>
@@ -62,8 +62,8 @@ const Contact = () => {
                         <Form.Label>Message</Form.Label>
                         <Form.Control name="message" as="textarea" rows={3} placeholder="Enter message" />
                     </Form.Group>
-                    <Col className="col-sm-12 col-md-4 mx-auto text-center">
-                        <Button size="lg" variant="primary" type="submit" className="px-5 mx-auto btn-primary">
+                    <Col className="col-sm-12 col-md-4 mx-auto mt-4 text-center">
+                        <Button size="lg" variant="primary" type="submit" className="mx-auto btn-primary">
                             Send
                         </Button>
                     </Col>

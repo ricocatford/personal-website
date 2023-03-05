@@ -24,7 +24,7 @@ const About = () => {
                         Hello! My name is Ricardo Albarenque, and I'm based in London. Currently finishing my diploma of Full-Stack Web Development at City of Bristol College. If I'm not coding some App, I'm probably playing drums or videogames.
                     </p>
                     <p>
-                        My preferred framework is ReactJS. I have a diverse set of skills, from HTML + CSS + JavaScript + Python, to Responsive Design and UX/UI, to Unit Testing and Debugging, all the way to editing images in Adobe Photoshop.
+                        My preferred framework is ReactJS. I have a diverse set of skills, from HTML + CSS + JavaScript + Python, to Responsive Design and UX/UI, to Unit Testing and Debugging, all the way to creating or editing images in Adobe Photoshop.
                     </p>
                     <p>
                         I'm very passionate about pixel-perfect designs, high performance and reusable code.

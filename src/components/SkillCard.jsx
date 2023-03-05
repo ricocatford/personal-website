@@ -8,7 +8,7 @@ const SkillCard = (props) => {
     return (
         <>
             {skills.map(skill => (
-                <Col xs={6} sm={4} md={3} lg={2}>
+                <Col xs={4} sm={3} md={2} lg={2}>
                     <div className="skill-container mx-auto" key={skill.id}>
                         <img src={skill.image} alt={skill.name} className="skill-image"/>
                         <h3 className="skill-heading text-center">

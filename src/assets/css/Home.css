@@ -6,8 +6,23 @@
     -o-background-size: cover;
     background-size: cover;
     width: 100%;
+    height: 90vh;
+}
+
+.hero-heading-wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero-heading {
-    max-width: 700px;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 4rem 0 2rem;
+    font-size: 4rem;
+    color: #9ef01a;
+}
+
+@media screen and (max-width: 550px) {
+    .hero-heading {
+        font-size: 2.5rem;
+    }
 }
