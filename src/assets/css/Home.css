@@ -1,7 +1,13 @@
-.hero-container {
-    background-color: linear-gradient();
+.hero-container-image {
+    z-index: -1;
+    background: url("images/hero-background.jpg") no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
 }
 
 .hero-heading {
-    max-width: 600px;
+    max-width: 700px;
 }

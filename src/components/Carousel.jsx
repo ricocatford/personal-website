@@ -17,7 +17,7 @@ const CustomCarousel = (props) => {
             <h2 className="carousel-heading">
               {project.name}
             </h2>
-            <p className="carousel-description">
+            <p>
               {project.description}
             </p>
             <div className="d-flex justify-content-center">

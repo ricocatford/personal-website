@@ -5,7 +5,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../assets/css/Navbar.css";
 
 const CustomNavbar = () => {
   return (
@@ -17,16 +16,16 @@ const CustomNavbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link as={Link} to={"/"} className="link nav-link">
+            <Nav.Link as={Link} to={"/"} className="link text-uppercase">
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to={"portfolio"} className="link nav-link">
+            <Nav.Link as={Link} to={"portfolio"} className="link text-uppercase">
               Portfolio
             </Nav.Link>
-            <Nav.Link as={Link} to={"about"} className="link nav-link">
+            <Nav.Link as={Link} to={"about"} className="link text-uppercase">
               About
             </Nav.Link>
-            <Nav.Link as={Link} to={"contact"} className="link nav-link">
+            <Nav.Link as={Link} to={"contact"} className="link text-uppercase">
               Contact
             </Nav.Link>
           </Nav>

@@ -12,9 +12,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Container>
-        <Outlet />
-      </Container>
+      <Outlet />
       <Footer />
     </>
   )

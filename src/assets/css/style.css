@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
 * {
-    font-family: 'Tilt Neon', cursive;
+    font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -11,13 +11,8 @@
     background-color: #1d1d1d;
 }
 
-p {
-    font-size: 1.25rem;
-    color: #e6e6e6;
-}
-
 .main-container {
-    min-height: 85vh;
+    min-height: 90vh;
     color: #e6e6e6;
 }
 
@@ -25,14 +20,15 @@ p {
 .subheading {
     color: #9ef01a;
     margin-bottom: 2rem;
+    text-transform: uppercase;
 }
 
 .heading {
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 .subheading {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .link {
@@ -59,10 +55,10 @@ p {
 
 @media screen and (max-width: 500px) {
     .heading {
-        font-size: 3.5rem;
+        font-size: 2.25rem;
     }
 
     .subheading {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 }
