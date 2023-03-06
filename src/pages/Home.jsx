@@ -21,10 +21,10 @@ const Home = () => {
                     </Row>
                     <Row>
                         <Col className="col-sm-12 mx-auto mb-5 text-center">
-                            <Button  as={Link} to={"portfolio"} size="lg" className="mx-2 mb-1 btn-primary">
+                            <Button as={Link} to={"portfolio"} size="lg" className="mx-2 mb-1 btn-primary">
                                 See Work
                             </Button>
-                            <Button  as={Link} to={"contact"} size="lg" className="mx-2 mb-1 btn-outline">
+                            <Button as={Link} to={"contact"} size="lg" className="mx-2 mb-1 btn-outline">
                                 Contact Me
                             </Button>
                         </Col>

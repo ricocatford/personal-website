@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 import emailjs from "@emailjs/browser";
 
@@ -47,18 +47,18 @@ const Contact = () => {
                 <Form ref={form} onSubmit={sendEmail}>
                     <Form.Group className="col-sm-12 col-md-8 col-lg-5 mb-3 mx-auto">
                         <Form.Label>Email address</Form.Label>
-                        <Form.Control name="user_email" type="email" placeholder="Enter email" />
+                        <Form.Control name="user_email" type="email" placeholder="Enter email" required />
                         <Form.Text className="text-muted">
                             I'll never share your email with anyone else.
                         </Form.Text>
                     </Form.Group>
                     <Form.Group className="col-sm-12 col-md-8 col-lg-5 mb-3 mx-auto">
                         <Form.Label>Name</Form.Label>
-                        <Form.Control name="user_name" type="text" placeholder="Enter name" />
+                        <Form.Control name="user_name" type="text" placeholder="Enter name" required />
                     </Form.Group>
                     <Form.Group className="col-sm-12 col-md-8 col-lg-5 mb-3 mx-auto" controlId="exampleForm.ControlTextarea1">
                         <Form.Label>Message</Form.Label>
-                        <Form.Control name="message" as="textarea" rows={4} placeholder="Enter message" />
+                        <Form.Control name="message" as="textarea" rows={4} placeholder="Enter message" required />
                     </Form.Group>
                     <Col className="col-sm-12 col-md-4 mx-auto mt-4 text-center">
                         <Button size="lg" variant="primary" type="submit" className="mx-auto btn-primary">
