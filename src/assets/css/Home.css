@@ -1,6 +1,6 @@
 .hero-container-image {
     z-index: -1;
-    background: url("images/hero-background.jpg") no-repeat center center scroll;
+    background: url("/public/images/hero-background.jpg") no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
