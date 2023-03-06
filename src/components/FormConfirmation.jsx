@@ -12,7 +12,7 @@ const FormConfirmation = () => {
         <ToastContainer position="bottom-center" className="p-5">
             <Toast show={show} onClose={toggleShow}>
                 <Toast.Header>
-                    <strong className="me-auto">Message sent successfully</strong>
+                    <strong className="me-auto">Message sent</strong>
                 </Toast.Header>
                 <Toast.Body>
                     Thank you. I will contact you back as soon as possible.
