@@ -16,7 +16,7 @@
         "image": "images/projects/guess-the-word.png",
         "links": {
             "repository": "https://github.com/ricocatford/guess-the-word",
-            "live": "http://ricodev.me/guess-the-word"
+            "live": "https://ricocatford.github.io/guess-the-word/"
         }
     },
     {
@@ -25,7 +25,7 @@
         "description": "A mockup website.",
         "image": "images/projects/beautybay.png",
         "links": {
-            "repository": "https://github.com/ricocatford/beautybay",
+            "repository": "https://ricocatford.github.io/beautybay",
             "live": "http://ricodev.me/beautybay"
         }
     }
