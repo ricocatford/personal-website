@@ -25,8 +25,8 @@
         "description": "A mockup website.",
         "image": "images/projects/beautybay.png",
         "links": {
-            "repository": "https://ricocatford.github.io/beautybay",
-            "live": "http://ricodev.me/beautybay"
+            "repository": "https://github.com/ricocatford/beautybay",
+            "live": "https://ricocatford.github.io/beautybay/"
         }
     }
 ]
