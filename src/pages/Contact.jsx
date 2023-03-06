@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 import emailjs from "@emailjs/browser";
 
@@ -7,9 +7,12 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form"
 import Button from "react-bootstrap/Button"
+import FormConfirmation from "../components/FormConfirmation";
 
 const Contact = () => {
     const form = useRef();
+
+    const [submittedForm, setSubmittedForm] = useState(false);
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -22,52 +25,56 @@ const Contact = () => {
         .then((result) => {
             console.log(result.text);
             e.target.reset();
+            setSubmittedForm(true);
         }, (error) => {
             console.log(error.text);
         });
     };
 
     return (
-        <Container className="main-container py-3">
-            <Row>
-                <Col className="col-sm-12 text-center">
-                    <h1 className="heading">
-                        Contact Me
-                    </h1>
-                </Col>
-            </Row>
-            <Row>
-                <Col className="col-sm-12 text-center">
-                    <p className="flow-text mb-4">
-                        Have a question? Please enquire below.
-                    </p>
-                </Col>
-            </Row>
-            <Row>
-                <Form ref={form} onSubmit={sendEmail}>
-                    <Form.Group className="col-sm-12 col-md-8 col-lg-5 mb-3 mx-auto">
-                        <Form.Label>Email address</Form.Label>
-                        <Form.Control name="user_email" type="email" placeholder="Enter your email" required />
-                        <Form.Text className="text-muted">
-                            I'll never share your email with anyone else.
-                        </Form.Text>
-                    </Form.Group>
-                    <Form.Group className="col-sm-12 col-md-8 col-lg-5 mb-3 mx-auto">
-                        <Form.Label>Name</Form.Label>
-                        <Form.Control name="user_name" type="text" placeholder="Enter your name" required />
-                    </Form.Group>
-                    <Form.Group className="col-sm-12 col-md-8 col-lg-5 mb-3 mx-auto" controlId="exampleForm.ControlTextarea1">
-                        <Form.Label>Message</Form.Label>
-                        <Form.Control name="message" as="textarea" rows={4} placeholder="Enter your message" required />
-                    </Form.Group>
-                    <Col className="col-sm-12 col-md-4 mx-auto mt-4 text-center">
-                        <Button size="lg" variant="primary" type="submit" className="mx-auto btn-primary">
-                            Send
-                        </Button>
+        <>
+            {submittedForm ? <FormConfirmation /> : ""}
+            <Container className="main-container py-3">
+                <Row>
+                    <Col className="col-sm-12 text-center">
+                        <h1 className="heading">
+                            Contact Me
+                        </h1>
                     </Col>
-                </Form>
-            </Row>
-        </Container>
+                </Row>
+                <Row>
+                    <Col className="col-sm-12 text-center">
+                        <p className="flow-text mb-4">
+                            Have a question? Please enquire below.
+                        </p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Form ref={form} onSubmit={sendEmail}>
+                        <Form.Group className="col-sm-12 col-md-8 col-lg-5 mb-3 mx-auto">
+                            <Form.Label>Email address</Form.Label>
+                            <Form.Control name="user_email" type="email" placeholder="Enter your email" required />
+                            <Form.Text className="text-muted">
+                                I'll never share your email with anyone else.
+                            </Form.Text>
+                        </Form.Group>
+                        <Form.Group className="col-sm-12 col-md-8 col-lg-5 mb-3 mx-auto">
+                            <Form.Label>Name</Form.Label>
+                            <Form.Control name="user_name" type="text" placeholder="Enter your name" required />
+                        </Form.Group>
+                        <Form.Group className="col-sm-12 col-md-8 col-lg-5 mb-3 mx-auto" controlId="exampleForm.ControlTextarea1">
+                            <Form.Label>Message</Form.Label>
+                            <Form.Control name="message" as="textarea" rows={4} placeholder="Enter your message" required />
+                        </Form.Group>
+                        <Col className="col-sm-12 col-md-4 mx-auto mt-4 text-center">
+                            <Button size="lg" variant="primary" type="submit" className="mx-auto btn-primary">
+                                Send
+                            </Button>
+                        </Col>
+                    </Form>
+                </Row>
+            </Container>
+        </>
     );
 }
 
