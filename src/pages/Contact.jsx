@@ -12,7 +12,9 @@ import FormConfirmation from "../components/FormConfirmation";
 const Contact = () => {
     const form = useRef();
 
-    const [submittedForm, setSubmittedForm] = useState(false);
+    const [showConfirmation, setShowConfirmation] = useState(false);
+
+    const toggleShow = () => setShowConfirmation(!showConfirmation);
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -25,7 +27,7 @@ const Contact = () => {
         .then((result) => {
             console.log(result.text);
             e.target.reset();
-            setSubmittedForm(true);
+            setShowConfirmation(true);
         }, (error) => {
             console.log(error.text);
         });
@@ -33,7 +35,6 @@ const Contact = () => {
 
     return (
         <>
-            {submittedForm ? <FormConfirmation /> : ""}
             <Container className="main-container py-3">
                 <Row>
                     <Col className="col-sm-12 text-center">
@@ -74,6 +75,8 @@ const Contact = () => {
                     </Form>
                 </Row>
             </Container>
+            
+            {showConfirmation ? <FormConfirmation toggleShow={toggleShow} /> : ""}
         </>
     );
 }
