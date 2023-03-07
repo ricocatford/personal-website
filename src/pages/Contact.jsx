@@ -63,7 +63,7 @@ const Contact = () => {
                             <Form.Label>Name</Form.Label>
                             <Form.Control name="user_name" type="text" placeholder="Enter your name" required />
                         </Form.Group>
-                        <Form.Group className="col-sm-12 col-md-8 col-lg-5 mb-3 mx-auto" controlId="exampleForm.ControlTextarea1">
+                        <Form.Group className="col-sm-12 col-md-8 col-lg-5 mb-3 mx-auto">
                             <Form.Label>Message</Form.Label>
                             <Form.Control name="message" as="textarea" rows={4} placeholder="Enter your message" required />
                         </Form.Group>
@@ -75,7 +75,7 @@ const Contact = () => {
                     </Form>
                 </Row>
             </Container>
-            
+
             {showConfirmation ? <FormConfirmation toggleShow={toggleShow} /> : ""}
         </>
     );
