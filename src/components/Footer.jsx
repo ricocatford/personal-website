@@ -9,7 +9,7 @@ import "../assets/css/Footer.css";
 
 const CustomFooter = () => {
     return (
-        <div className="footer-container">
+        <footer className="footer py-3 mt-auto footer-wrapper">
             <Container>
                 <Row>
                     <Col className="col-sm-6 d-flex align-items-center">
@@ -25,7 +25,7 @@ const CustomFooter = () => {
                     </Col>
                 </Row>
             </Container>
-        </div>
+        </footer>
     );
 }
 

@@ -1,11 +1,10 @@
-.footer-container {
+.footer-wrapper {
     background-color: #212529;
     color: #e6e6e6;
-    padding: 1rem 0;
 }
 
 .footer-copyright {
-    font-size: 1rem;
+    font-size: .8rem;
     margin-bottom: 0;
 }
 
