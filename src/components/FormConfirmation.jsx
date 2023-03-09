@@ -1,11 +1,9 @@
-import { useState } from "react";
-
 import Toast from "react-bootstrap/Toast";
 import ToastContainer from "react-bootstrap/ToastContainer";
 
 const FormConfirmation = (props) => {
     return (
-        <ToastContainer position="bottom-center" className="p-5">
+        <ToastContainer position="top-end" className="p-5">
             <Toast onClose={props.toggleShow}>
                 <Toast.Header>
                     <strong className="me-auto">Message sent</strong>

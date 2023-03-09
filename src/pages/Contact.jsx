@@ -76,7 +76,7 @@ const Contact = () => {
                 </Row>
             </Container>
 
-            {showConfirmation ? <FormConfirmation toggleShow={toggleShow} /> : ""}
+            {showConfirmation && <FormConfirmation toggleShow={toggleShow} />}
         </>
     );
 }
