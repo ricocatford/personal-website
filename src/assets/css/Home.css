@@ -6,7 +6,7 @@
     -o-background-size: cover;
     background-size: cover;
     width: 100%;
-    min-height: 90vh;
+    min-height: calc(100vh - 133px);
 }
 
 .hero-heading-wrapper {
