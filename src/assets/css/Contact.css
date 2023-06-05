@@ -283,10 +283,6 @@ textarea.form__input {
         font-size: 0.9em;
     }
 
-    .github__stats__list {
-        flex-wrap: wrap;
-    }
-
     .github__info__item {
         display: none;
     }

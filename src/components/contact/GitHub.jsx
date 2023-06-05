@@ -32,7 +32,7 @@ export default function GitHub() {
                     <span>Joined on:</span>
                     {formatDate(userData.created_at)}
                 </p>
-                <ul className="github__stats__list flex align-center justify-center">
+                <ul className="github__stats__list flex flex-wrap align-center justify-center">
                     <li className="github__stats__item flex align-center">
                         <span>{userData.followers}</span>Followers
                     </li>

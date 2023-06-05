@@ -10,7 +10,7 @@ export default function Overview() {
                     </div>
                     <h4 className="card__heading text-center">UX / UI</h4>
                     <p className="card__text text-center">
-                        I create designs that visually appealing, fully
+                        I create designs that are visually appealing, fully
                         responsive and accessible. Ensuring a great user
                         experience is a top priority for me, and I implement
                         high accessibility standards to make my designs
