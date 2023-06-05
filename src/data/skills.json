@@ -77,6 +77,6 @@
         "id": 6,
         "icon": "fa-solid fa-compass-drafting",
         "skillsCategory": "Design and Architecture",
-        "skills": ["RESTful API", "SEO", "OOP", "ORM"]
+        "skills": ["RESTful API", "SEO", "BEM", "OOP", "ORM"]
     }
 ]
