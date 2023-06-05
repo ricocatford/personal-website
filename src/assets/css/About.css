@@ -1,0 +1,165 @@
+/*------------------- BIO -------------------*/
+
+.bio__container {
+    gap: 4rem;
+    padding: 5rem 0;
+}
+
+.bio__img__wrapper {
+    width: 35%;
+    margin: auto;
+}
+
+.bio__img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.bio__text__wrapper {
+    width: 65%;
+    margin: auto;
+}
+
+.bio__text {
+    font-weight: 600;
+    font-size: 1.05em;
+    margin-bottom: 2rem;
+}
+
+/*------------------- SKILLS -------------------*/
+
+.skills__section {
+    gap: 3rem;
+}
+
+.skills__text__wrapper {
+    flex-direction: column;
+    width: 30%;
+}
+
+.resume__icon {
+    font-size: 4em;
+    margin: 2rem auto;
+    color: var(--creamy-white-color);
+    cursor: pointer;
+}
+
+.skills__container {
+    border-radius: 0.5rem;
+    width: 100%;
+    gap: 1.5rem;
+    background: var(--creamy-white-color);
+    color: var(--berry-black-color);
+    font-weight: 600;
+}
+
+.skills__sidenav-wrapper {
+    width: 40%;
+}
+
+.skills__sidenav-icon {
+    font-size: 1.05em;
+    margin-right: 0.5rem;
+}
+
+.skills__list-wrapper {
+    width: 60%;
+    flex-direction: column;
+}
+
+.skills__list-wrapper i {
+    font-size: 10em;
+    color: var(--light-gray-color);
+    margin: 1rem auto;
+}
+
+.skills__sidenav {
+    list-style: none;
+    flex-direction: column;
+}
+
+.skills__sidenav-btn,
+.skills__sidenav-btn--highlight {
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+.skills__sidenav-btn {
+    background: var(--light-gray-color);
+}
+
+.skills__sidenav-btn--highlight {
+    background: var(--light-orange-color);
+}
+
+.skills__sidenav-btn:hover,
+.skills__sidenav-btn:focus {
+    background: var(--light-blue-color);
+}
+
+.skills__list {
+    padding: 0.75rem;
+    line-height: 1.9em;
+    column-count: 2;
+    column-gap: 4rem;
+}
+
+/*------------------- MEDIA QUERIES -------------------*/
+
+@media screen and (max-width: 1024px) {
+    .bio__container {
+        flex-direction: column;
+    }
+
+    .skills__section {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .skills__text__wrapper {
+        width: 100%;
+    }
+
+    .skills__container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bio__container {
+        padding: 3rem 0;
+    }
+
+    .bio__text__wrapper {
+        width: 100%;
+    }
+
+    .skills__sidenav-wrapper {
+        width: 40%;
+    }
+
+    .skills__sidenav-icon {
+        margin-right: 0.5rem;
+    }
+
+    .skills__list-wrapper i {
+        font-size: 5em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .bio__img__wrapper {
+        width: 50%;
+    }
+
+    .skills__sidenav-icon {
+        display: none;
+    }
+
+    .skills__list {
+        column-count: 1;
+    }
+}

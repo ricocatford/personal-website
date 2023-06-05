@@ -1,67 +1,82 @@
 [
     {
         "id": 0,
-        "name": "HTML",
-        "image": "images/skills/html.png"
+        "icon": "fa-regular fa-image",
+        "skillsCategory": "Front-end",
+        "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "TypeScript",
+            "jQuery",
+            "Bootstrap",
+            "MaterializeCSS",
+            "ReactJS",
+            "NextJS"
+        ]
     },
     {
         "id": 1,
-        "name": "CSS",
-        "image": "images/skills/css.png"
+        "icon": "fa-solid fa-bolt",
+        "skillsCategory": "Back-end",
+        "skills": [
+            "NodeJS",
+            "ExpressJS",
+            "CryptoJS",
+            "JavaScript",
+            "TypeScript",
+            "JSON Web Token",
+            "Python",
+            "AllAuth",
+            "Flask",
+            "Django"
+        ]
     },
     {
         "id": 2,
-        "name": "Bootstrap",
-        "image": "images/skills/bootstrap.png"
+        "icon": "fa-solid fa-database",
+        "skillsCategory": "Databases",
+        "skills": [
+            "SQLite",
+            "MySQL",
+            "PostgresSQL",
+            "Sequelize",
+            "MongoDB",
+            "MongooseJS",
+            "PyMongo"
+        ]
     },
     {
         "id": 3,
-        "name": "JavaScript",
-        "image": "images/skills/js.png"
+        "icon": "fa-solid fa-cubes",
+        "skillsCategory": "Software",
+        "skills": [
+            "VS Code",
+            "PyCharm",
+            "Adobe Photoshop",
+            "DBeaver",
+            "Postman",
+            "Balsamiq",
+            "GitLab",
+            "Jira"
+        ]
     },
     {
         "id": 4,
-        "name": "Python",
-        "image": "images/skills/python.png"
+        "icon": "fa-brands fa-docker",
+        "skillsCategory": "Infrastructure",
+        "skills": ["Linux", "NPM", "Yarn", "Vite", "Git", "Docker", "AWS"]
     },
     {
         "id": 5,
-        "name": "Flask",
-        "image": "images/skills/flask.png"
+        "icon": "fa-brands fa-stripe-s",
+        "skillsCategory": "Services",
+        "skills": ["Stripe", "EmailJS", "ElephantSQL"]
     },
     {
         "id": 6,
-        "name": "Django",
-        "image": "images/skills/django.png"
-    },
-    {
-        "id": 7,
-        "name": "ReactJS",
-        "image": "images/skills/reactjs.png"
-    },
-    {
-        "id": 8,
-        "name": "NodeJS",
-        "image": "images/skills/nodejs.png"
-    },
-    {
-        "id": 9,
-        "name": "Yarn",
-        "image": "images/skills/yarn.png"
-    },
-    {
-        "id": 10,
-        "name": "ViteJS",
-        "image": "images/skills/vitejs.png"
-    },
-    {
-        "id": 11,
-        "name": "Jest",
-        "image": "images/skills/jest.png"
-    },
-    {
-        "id": 12,
-        "name": "Git",
-        "image": "images/skills/git.png"
+        "icon": "fa-solid fa-compass-drafting",
+        "skillsCategory": "Design and Architecture",
+        "skills": ["RESTful API", "SEO", "OOP", "ORM"]
     }
 ]

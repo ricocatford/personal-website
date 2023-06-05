@@ -1,0 +1,85 @@
+.hero__container {
+    width: 100%;
+    padding: 8rem 0;
+    flex-direction: row-reverse;
+    gap: 5rem;
+}
+
+.hero__wrapper {
+    font-family: "Poppins", sans-serif;
+    flex-direction: column;
+
+    margin: auto;
+}
+
+.hero__subheading {
+    color: var(--orange-color);
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+    line-height: 1em;
+}
+
+.hero__heading {
+    font-size: 3em;
+    margin-bottom: 1rem;
+    line-height: 1em;
+}
+
+.hero__text {
+    margin-bottom: 2rem;
+}
+
+.hero__btn {
+    width: fit-content;
+    margin: 0 auto;
+    background: linear-gradient(
+        270deg,
+        var(--light-blue-color),
+        var(--sky-blue-color)
+    );
+    color: var(--creamy-white-color);
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+    transform: scale(1.05);
+}
+
+/*------------------- ICONS STACK -------------------*/
+
+.icons__container {
+    width: 400px;
+    gap: 3rem;
+}
+
+.icon__img {
+    width: 80px;
+    height: 80px;
+}
+
+/*------------------- MEDIA QUERIES -------------------*/
+@media screen and (max-width: 1024px) {
+    .hero__container {
+        flex-direction: column;
+    }
+
+    .hero__wrapper {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero__subheading {
+        font-size: 1.15em;
+    }
+
+    .hero__heading {
+        font-size: 2.25em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero__btn {
+        width: 100%;
+    }
+}

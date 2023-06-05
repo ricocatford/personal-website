@@ -1,14 +1,8 @@
-.footer-wrapper {
-    background-color: #212529;
-    color: #e6e6e6;
+.footer__container {
+    padding: 1rem 2rem;
 }
 
-.footer-copyright {
-    font-size: .8rem;
-    margin-bottom: 0;
-}
-
-.footer-social-icon {
-    font-size: 2rem;
-    margin-left: .5rem;
+.footer__text {
+    font-size: 0.9em;
+    font-weight: 600;
 }

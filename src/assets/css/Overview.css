@@ -1,0 +1,58 @@
+.overview__container {
+    padding: 3rem 1.5rem;
+}
+
+.card {
+    background: linear-gradient(
+        180deg,
+        var(--light-gray-color),
+        var(--gray-color)
+    );
+    color: var(--berry-black-color);
+    width: 30%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.card--highlight {
+    background: linear-gradient(
+        180deg,
+        var(--light-orange-color),
+        var(--orange-color)
+    );
+}
+
+.card__icon {
+    margin: 1rem auto;
+    font-size: 3rem;
+}
+
+.card__heading {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
+.card__text {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/*------------------- MEDIA QUERIES -------------------*/
+
+@media screen and (max-width: 1024px) {
+    .overview__container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card {
+        width: 100%;
+    }
+}

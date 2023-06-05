@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Quicksand:wght@300;600&display=swap");
+
+:root {
+    --berry-black-color: #1e1e24;
+    --dark-gray-color: #3b3b3c;
+    --gray-color: #cdcdcd;
+    --light-gray-color: #e8e8e8;
+    --orange-color: #ee8b09;
+    --light-orange-color: #ffb62f;
+    --creamy-white-color: #fefaf0;
+    --sky-blue-color: #0088dd;
+    --light-blue-color: #7bc6f5;
+    --max-width: 1300px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Quicksand", Sans-serif;
+    background: radial-gradient(
+        circle at top right,
+        var(--dark-gray-color),
+        var(--berry-black-color) 700px
+    );
+    color: var(--creamy-white-color);
+}
+
+/*------------------- COMMON CLASSES -------------------*/
+
+.container {
+    margin: auto;
+    max-width: var(--max-width);
+    padding: 2rem 1.5rem;
+}
+
+.container--fluid {
+    width: 100%;
+}
+
+.bg-light {
+    background: var(--creamy-white-color);
+}
+
+.mh-100 {
+    min-height: calc(100vh - 80px);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.box-shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.subheading {
+    margin-bottom: 2rem;
+    font-size: 2.25rem;
+}
+
+/*------------------- BUTTONS -------------------*/
+
+.btn {
+    text-align: center;
+    padding: 0.75rem 2.5rem;
+    border: none;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+}
+
+.btn--primary {
+    background: linear-gradient(
+        270deg,
+        var(--light-orange-color),
+        var(--orange-color)
+    );
+    color: var(--berry-black-color);
+}
+
+.btn--outline {
+    background: transparent;
+    color: var(--creamy-white-color);
+    border: 2px solid var(--creamy-white-color);
+}
+
+.btn--primary:hover,
+.btn--primary:focus,
+.btn--outline:hover,
+.btn--outline:focus {
+    transform: scale(1.05);
+}
+
+.btn--scroll-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 1;
+    cursor: pointer;
+    border: 2px solid var(--creamy-white-color);
+    font-size: 1.25em;
+    color: var(--creamy-white-color);
+    background: var(--sky-blue-color);
+    border-radius: 50%;
+    padding: 0.75rem 1rem;
+}
+
+.btn__icon {
+    margin-left: 0.5rem;
+}
+
+/*------------------- LOADING SPINNER -------------------*/
+
+.loading__spinner__wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.loading__spinner {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.loading__spinner:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid var(--berry-black-color);
+    border-color: var(--berry-black-color) transparent var(--berry-black-color)
+        transparent;
+    animation: loading__spinner 1s linear infinite;
+}
+
+@keyframes loading__spinner {
+    0% {
+        transform: rotate(0deg);
+        border: 6px solid var(--creamy-white-color);
+        border-color: var(--creamy-white-color) transparent
+            var(--creamy-white-color) transparent;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        border: 6px solid var(--berry-black-color);
+        border-color: var(--berry-black-color) transparent
+            var(--berry-black-color) transparent;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        border: 6px solid var(--creamy-white-color);
+        border-color: var(--creamy-white-color) transparent
+            var(--creamy-white-color) transparent;
+    }
+}
+
+/*------------------- MEDIA QUERIES -------------------*/
+
+@media screen and (max-width: 576px) {
+    .subheading {
+        margin: 2rem 0;
+        font-size: 1.75rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.75rem;
+    }
+}

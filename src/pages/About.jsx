@@ -1,59 +1,35 @@
 import { Link } from "react-router-dom";
 
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-
-import SkillCard from "../components/SkillCard";
-
 import data from "../data/skills.json";
 
-const About = () => {
+import Bio from "../components/about/Bio";
+import Skills from "../components/about/Skills";
+
+import "../assets/css/About.css";
+
+export default function About() {
     return (
-        <Container className="main-container py-3">
-            <Row>
-                <Col className="col-sm-12 text-center">
-                    <h1 className="heading">
-                        Who is Rico?
-                    </h1>
-                </Col>
-            </Row>
-            <Row>
-                <Col className="col-sm-12 d-flex justify-content-center">
-                    <img src="images/rico.jpg" alt="Ricardo Albarenque" className="about-image" />
-                </Col>
-            </Row>
-            <Row>
-                <Col className="col-sm-12 col-md-12 col-lg-9 text-center mx-auto">
-                    <p>
-                        Hello! My name is Ricardo Albarenque, and I'm based in London. Currently finishing my diploma of Full-Stack Web Development at City of Bristol College. If I'm not coding some App, I'm probably playing drums or videogames.
+        <div className="container">
+            <Bio />
+            <h3 className="subheading">Skills and Resume</h3>
+            <div className="flex skills__section">
+                <div className="skills__text__wrapper flex align-center">
+                    <p className="skills__text">
+                        Here you can find a list of my skills. For more
+                        information about my professional background, please
+                        refer to my resume, which you can access here:
                     </p>
-                    <p>
-                        My preferred framework is ReactJS. I have a diverse set of skills, from HTML + CSS + JavaScript + Python, to Responsive Design and UX/UI, to Unit Testing and Debugging, all the way to creating or editing images in Adobe Photoshop.
-                    </p>
-                    <p>
-                        I'm very passionate about pixel-perfect designs, high performance and reusable code.
-                    </p>
-                </Col>
-            </Row>
-            <hr className="divider" />
-            <Row>
-                <Col className="col-sm-12 text-center">
-                    <h2 className="subheading">
-                        Technologies
-                    </h2>
-                </Col>
-            </Row>
-            <Row>
-                <SkillCard skills={data} />
-            </Row>
-            <Row>
-                <p className="text-center">
-                    Icons from <Link to="https://www.flaticon.com" target="_blank" className="link">flaticon.com</Link>
-                </p>
-            </Row>
-        </Container>
+                    <Link
+                        to="/documents/resume.pdf"
+                        download="ricardo-albarenque-cv"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <i className="fa-solid fa-file-arrow-down resume__icon" />
+                    </Link>
+                </div>
+                <Skills skills={data} />
+            </div>
+        </div>
     );
 }
-
-export default About;

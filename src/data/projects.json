@@ -1,32 +1,35 @@
 [
     {
         "id": 0,
+        "name": "Black Dog Shop",
+        "description": "eCommerce for skateboards and clothing products with login system. Allows anonymous or registered users to checkout using Stripe payments API. Registered users have the option to save delivery information and review their order history.",
+        "image": "images/projects/black-dog-shop.png",
+        "stack": ["Python", "Django", "SQLite", "Bootstrap", "Stripe", "AWS"],
+        "links": {
+            "repository": "https://github.com/ricocatford/black-dog-shop",
+            "live": "https://blackdogshop.herokuapp.com"
+        }
+    },
+    {
+        "id": 1,
         "name": "BonTeeth",
-        "description": "A platform for booking and managing appointments.",
+        "description": "Platform for booking and managing appointments with login system. There is two possible scenarios for the usage of this app, as a regular user (customer) or as an admin (business owner), each of them naturally providing different features. I can provide details for admin account on request.",
         "image": "images/projects/bonteeth.png",
+        "stack": ["Python", "Flask", "MaterializeCSS", "MongoDB"],
         "links": {
             "repository": "https://github.com/ricocatford/bonteeth-project",
             "live": "https://bonteeth.herokuapp.com"
         }
     },
     {
-        "id": 1,
+        "id": 2,
         "name": "Guess the Word",
-        "description": "A game using 2 RESTful APIs.",
+        "description": "Interactive game for learning english vocabulary. Given a description of the word, you have to guess the missing characters. Game is powered by two free RESTful API.",
         "image": "images/projects/guess-the-word.png",
+        "stack": ["JavaScript", "jQuery", "RESTful API"],
         "links": {
             "repository": "https://github.com/ricocatford/guess-the-word",
             "live": "https://ricocatford.github.io/guess-the-word/"
-        }
-    },
-    {
-        "id": 2,
-        "name": "BeautyBay",
-        "description": "A mockup website.",
-        "image": "images/projects/beautybay.png",
-        "links": {
-            "repository": "https://github.com/ricocatford/beautybay",
-            "live": "https://ricocatford.github.io/beautybay/"
         }
     }
 ]

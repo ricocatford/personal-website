@@ -1,0 +1,293 @@
+.contact__subheading {
+    color: var(--berry-black-color);
+    margin: 0 auto 1rem;
+}
+
+.contact__text {
+    color: var(--berry-black-color);
+    font-size: 1.15em;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.contact__container {
+    color: var(--berry-black-color);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact__content-wrapper {
+    width: 65%;
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+}
+
+.contact__sidenav-wrapper {
+    width: 35%;
+}
+
+.contact__tab {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+
+.contact__sidenav {
+    flex-direction: column;
+    list-style: none;
+    height: 100%;
+    gap: 0.75rem;
+}
+
+.contact__sidenav-btn {
+    cursor: pointer;
+    padding: 3rem 0;
+    background: linear-gradient(
+        225deg,
+        var(--light-gray-color),
+        var(--gray-color)
+    );
+    border-top-right-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact__sidenav-btn:hover,
+.contact__sidenav-btn:focus {
+    background: radial-gradient(
+        circle at top right,
+        var(--dark-gray-color),
+        var(--berry-black-color) 200px
+    );
+    color: var(--creamy-white-color);
+}
+
+.contact__sidenav-btn--orange {
+    background: linear-gradient(
+        225deg,
+        var(--light-orange-color),
+        var(--orange-color)
+    );
+}
+
+.contact__sidenav-btn--blue {
+    background: linear-gradient(
+        225deg,
+        var(--light-blue-color),
+        var(--sky-blue-color)
+    );
+}
+
+.contact__sidenav-icon {
+    font-size: 3em;
+}
+
+.contact__sidenav-subheading {
+    font-size: 1.5em;
+}
+
+/*------------------- FORM -------------------*/
+
+.contact__form {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.contact__form .flex {
+    gap: 0.5rem;
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 48%;
+}
+
+.form__label {
+    font-weight: 600;
+}
+
+.form__input {
+    width: 100%;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.05em;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    border: 1px solid var(--light-gray-color);
+}
+
+textarea.form__input {
+    min-height: 250px;
+    resize: none;
+}
+
+.contact__form button {
+    cursor: pointer;
+}
+
+/*------------------- GITHUB -------------------*/
+
+.github__container {
+    flex-direction: column;
+    height: 100%;
+}
+
+.github__avatar {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.github__name {
+    font-size: 1.25em;
+    margin-bottom: 0.25rem;
+}
+
+.github__username {
+    display: block;
+    text-align: center;
+    font-size: 0.9em;
+    color: var(--dark-gray-color);
+}
+
+.github__stats__list {
+    font-weight: 600;
+    gap: 1rem;
+}
+
+.github__stats__item {
+    font-size: 0.8em;
+    padding: 0.75rem 0.25rem;
+    border-radius: 0.375rem;
+    background: var(--light-gray-color);
+    flex-direction: column;
+    min-width: 60px;
+}
+
+.github__stats__item span {
+    font-size: 1.5em;
+}
+
+.github__info__list {
+    list-style: none;
+    text-align: center;
+}
+
+.github__info__icon {
+    color: var(--dark-gray-color);
+    margin-right: 0.5rem;
+}
+
+.github__account__date {
+    padding: 0.25rem 1rem;
+    border-radius: 0.375rem;
+    background: var(--light-gray-color);
+    flex-direction: column;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.github__account__date span {
+    font-weight: 300;
+}
+
+/*------------------- LINKEDIN -------------------*/
+
+/*------------------- MEDIA QUERIES -------------------*/
+
+@media screen and (max-width: 1024px) {
+    .contact__text {
+        font-size: 1em;
+    }
+
+    .contact__container {
+        width: 100%;
+    }
+
+    .contact__form .flex {
+        flex-direction: column;
+    }
+
+    .github__container .btn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact__content-wrapper {
+        width: 80%;
+    }
+
+    textarea.form__input {
+        min-height: 140px;
+    }
+
+    .contact__tab {
+        padding: 1rem;
+    }
+
+    .contact__sidenav-wrapper {
+        width: 20%;
+    }
+
+    .contact__sidenav-subheading {
+        display: none;
+    }
+
+    .contact__sidenav-icon {
+        font-size: 2em;
+    }
+
+    .github__avatar {
+        width: 100px;
+    }
+
+    .github__stats__item {
+        padding: 0.25rem 0.15rem;
+    }
+
+    .github__stats__item span {
+        font-size: 1.2em;
+    }
+
+    .github__info__item {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contact__tab {
+        padding: 1rem;
+    }
+
+    .contact__sidenav-subheading {
+        display: none;
+    }
+
+    .contact__sidenav-icon {
+        font-size: 2em;
+    }
+
+    textarea.form__input {
+        min-height: 100px;
+    }
+
+    .github__name {
+        font-size: 1em;
+    }
+
+    .github__username,
+    .github__account__date {
+        font-size: 0.9em;
+    }
+
+    .github__stats__list {
+        flex-wrap: wrap;
+    }
+
+    .github__info__item {
+        display: none;
+    }
+}

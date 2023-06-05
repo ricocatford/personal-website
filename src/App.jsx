@@ -1,21 +1,16 @@
-import React from "react";
 import { Outlet } from "react-router-dom";
 
-import Container from "react-bootstrap/Container";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "./components/template/Navbar";
+import ScrollToTopButton from "./components/template/ScrollToTopButton";
+import Footer from "./components/template/Footer";
 
-import "./assets/css/style.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-
-const App = () => {
-  return (
-    <>
-      <Navbar />
-      <Outlet />
-      <Footer />
-    </>
-  )
+export default function App() {
+    return (
+        <>
+            <Navbar />
+            <Outlet />
+            <ScrollToTopButton />
+            <Footer />
+        </>
+    );
 }
-
-export default App;
