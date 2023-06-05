@@ -53,21 +53,21 @@
     font-weight: 600;
 }
 
-.skills__sidenav-wrapper {
+.skills__sidenav__wrapper {
     width: 40%;
 }
 
-.skills__sidenav-icon {
+.skills__sidenav__icon {
     font-size: 1.05em;
     margin-right: 0.5rem;
 }
 
-.skills__list-wrapper {
+.skills__list__wrapper {
     width: 60%;
     flex-direction: column;
 }
 
-.skills__list-wrapper i {
+.skills__list__wrapper i {
     font-size: 10em;
     color: var(--light-gray-color);
     margin: 1rem auto;
@@ -78,8 +78,8 @@
     flex-direction: column;
 }
 
-.skills__sidenav-btn,
-.skills__sidenav-btn--highlight {
+.skills__sidenav__btn,
+.skills__sidenav__btn--highlight {
     border-radius: 0.5rem;
     padding: 0.75rem;
     margin: 0.5rem;
@@ -87,16 +87,16 @@
     transition: all 0.15s ease-in-out;
 }
 
-.skills__sidenav-btn {
+.skills__sidenav__btn {
     background: var(--light-gray-color);
 }
 
-.skills__sidenav-btn--highlight {
+.skills__sidenav__btn--highlight {
     background: var(--light-orange-color);
 }
 
-.skills__sidenav-btn:hover,
-.skills__sidenav-btn:focus {
+.skills__sidenav__btn:hover,
+.skills__sidenav__btn:focus {
     background: var(--light-blue-color);
 }
 
@@ -137,15 +137,15 @@
         width: 100%;
     }
 
-    .skills__sidenav-wrapper {
+    .skills__sidenav__wrapper {
         width: 40%;
     }
 
-    .skills__sidenav-icon {
+    .skills__sidenav__icon {
         margin-right: 0.5rem;
     }
 
-    .skills__list-wrapper i {
+    .skills__list__wrapper i {
         font-size: 5em;
     }
 }
@@ -155,7 +155,7 @@
         width: 50%;
     }
 
-    .skills__sidenav-icon {
+    .skills__sidenav__icon {
         display: none;
     }
 

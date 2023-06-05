@@ -11,10 +11,10 @@ export default function ProjectCard({ projects }) {
                     className="flex justify-between project__card"
                     key={project.id}
                 >
-                    <div className="project__img-wrapper">
+                    <div className="project__img__wrapper">
                         <img src={project.image} alt={project.name} />
                     </div>
-                    <div className="project__info-wrapper">
+                    <div className="project__info__wrapper">
                         <h4 className="project__heading">{project.name}</h4>
 
                         <ul className="flex flex-wrap align-center project__stack">
@@ -22,7 +22,10 @@ export default function ProjectCard({ projects }) {
                                 <strong>Stack:</strong>
                             </span>
                             {project.stack.map((item, index) => (
-                                <li className="project__stack-item" key={index}>
+                                <li
+                                    className="project__stack__item"
+                                    key={index}
+                                >
                                     {item}
                                 </li>
                             ))}
@@ -30,7 +33,7 @@ export default function ProjectCard({ projects }) {
                         <p className="project__description">
                             {project.description}
                         </p>
-                        <div className="flex project__links-wrapper">
+                        <div className="flex project__links__wrapper">
                             <Link
                                 to={project.links.repository}
                                 className="btn btn--outline"

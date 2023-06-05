@@ -16,13 +16,13 @@
     margin: 0 auto;
 }
 
-.contact__content-wrapper {
+.contact__content__wrapper {
     width: 65%;
     border-top-left-radius: 0.75rem;
     border-bottom-left-radius: 0.75rem;
 }
 
-.contact__sidenav-wrapper {
+.contact__sidenav__wrapper {
     width: 35%;
 }
 
@@ -39,7 +39,7 @@
     gap: 0.75rem;
 }
 
-.contact__sidenav-btn {
+.contact__sidenav__btn {
     cursor: pointer;
     padding: 3rem 0;
     background: linear-gradient(
@@ -52,8 +52,8 @@
     transition: all 0.2s ease-in-out;
 }
 
-.contact__sidenav-btn:hover,
-.contact__sidenav-btn:focus {
+.contact__sidenav__btn:hover,
+.contact__sidenav__btn:focus {
     background: radial-gradient(
         circle at top right,
         var(--dark-gray-color),
@@ -62,7 +62,7 @@
     color: var(--creamy-white-color);
 }
 
-.contact__sidenav-btn--orange {
+.contact__sidenav__btn--orange {
     background: linear-gradient(
         225deg,
         var(--light-orange-color),
@@ -70,7 +70,7 @@
     );
 }
 
-.contact__sidenav-btn--blue {
+.contact__sidenav__btn--blue {
     background: linear-gradient(
         225deg,
         var(--light-blue-color),
@@ -78,11 +78,11 @@
     );
 }
 
-.contact__sidenav-icon {
+.contact__sidenav__icon {
     font-size: 3em;
 }
 
-.contact__sidenav-subheading {
+.contact__sidenav__subheading {
     font-size: 1.5em;
 }
 
@@ -216,7 +216,7 @@ textarea.form__input {
 }
 
 @media screen and (max-width: 768px) {
-    .contact__content-wrapper {
+    .contact__content__wrapper {
         width: 80%;
     }
 
@@ -228,15 +228,15 @@ textarea.form__input {
         padding: 1rem;
     }
 
-    .contact__sidenav-wrapper {
+    .contact__sidenav__wrapper {
         width: 20%;
     }
 
-    .contact__sidenav-subheading {
+    .contact__sidenav__subheading {
         display: none;
     }
 
-    .contact__sidenav-icon {
+    .contact__sidenav__icon {
         font-size: 2em;
     }
 
@@ -262,11 +262,11 @@ textarea.form__input {
         padding: 1rem;
     }
 
-    .contact__sidenav-subheading {
+    .contact__sidenav__subheading {
         display: none;
     }
 
-    .contact__sidenav-icon {
+    .contact__sidenav__icon {
         font-size: 2em;
     }
 
