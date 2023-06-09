@@ -128,6 +128,10 @@ textarea.form__input {
     cursor: pointer;
 }
 
+.form__feedback__text {
+    font-size: 1.25em;
+}
+
 /*------------------- GITHUB -------------------*/
 
 .github__container {
