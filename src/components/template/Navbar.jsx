@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 import "../../assets/css/Navbar.css";
+import LanguageSelect from "./LanguageSelect";
 
 export default function Navbar() {
     const [toggle, setToggle] = useState(false);
@@ -34,6 +35,7 @@ export default function Navbar() {
                             className="navbar__logo"
                         />
                     </Link>
+                    {/* <LanguageSelect /> */}
                     <button
                         className="navbar__toggler"
                         onClick={() => setToggle(!toggle)}
