@@ -14,10 +14,10 @@ export default function Hero() {
                     </h2>
                     <h1 className="hero__heading">Full-Stack Developer</h1>
                     <p className="hero__text">
-                        Currently based in Asturias, Spain. I was born in
-                        Argentina. I've achieved my diploma in Full-Stack Web
-                        Development at City of Bristol College. I'm passionate
-                        about pixel-perfect designs and reusable code!
+                        Currently based in Asturias, Spain. I've achieved my
+                        diploma in Full-Stack Web Development at City of Bristol
+                        College. I'm passionate about pixel-perfect designs and
+                        reusable code!
                     </p>
                     <Link to="about" className="btn hero__btn">
                         Learn More

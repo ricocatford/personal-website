@@ -42,6 +42,12 @@
     margin: 2rem auto;
     color: var(--creamy-white-color);
     cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+.resume__icon:hover,
+.resume__icon:focus {
+    color: var(--light-orange-color);
 }
 
 .skills__container {
