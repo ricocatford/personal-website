@@ -12,9 +12,9 @@ export default function Overview() {
                     <p className="card__text text-center">
                         I create designs that are visually appealing, fully
                         responsive and accessible. Ensuring a great user
-                        experience is a top priority for me, and I implement
-                        high accessibility standards to make my designs
-                        inclusive and user-friendly.
+                        experience is a top priority for me, I implement high
+                        accessibility standards to make my designs inclusive and
+                        user-friendly.
                     </p>
                 </div>
                 <div className="card card--highlight box-shadow">
