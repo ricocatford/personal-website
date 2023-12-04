@@ -12,7 +12,7 @@ export default function Navbar() {
 
     useEffect(() => {
         const handleScrollNavVisibility = () => {
-            if (window.pageYOffset > 80) {
+            if (window.scrollY > 80) {
                 setToggle(false);
             }
         };
