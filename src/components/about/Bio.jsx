@@ -13,6 +13,8 @@ export default function Bio() {
                     Hello! My name is Ricardo Albarenque, but feel free to call
                     me Rico. I was born in Argentina and raised in Spain.
                     Recently moved back to Spain after seven years in London.
+                </p>
+                <p className="bio__text">
                     Technology has always been a part of my life, starting from
                     my early days as a kid when I got my hands on my first PC
                     with Windows 98. When my family moved to Spain during my
