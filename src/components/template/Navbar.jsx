@@ -27,7 +27,7 @@ export default function Navbar() {
     return (
         <header>
             <nav className="navbar flex align-center">
-                <div className="navbar__container flex justify-between">
+                <div className="navbar__container flex">
                     <Link to="/" onClick={closeMobileMenu}>
                         <img
                             src="images/logo/logo.png"
@@ -35,7 +35,7 @@ export default function Navbar() {
                             className="navbar__logo"
                         />
                     </Link>
-                    {/* <LanguageSelect /> */}
+
                     <button
                         className="navbar__toggler"
                         onClick={() => setToggle(!toggle)}
@@ -103,6 +103,7 @@ export default function Navbar() {
                                 Contact
                             </HashLink>
                         </li>
+                        <LanguageSelect />
                     </ul>
                 </div>
             </nav>
