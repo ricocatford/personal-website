@@ -1,11 +1,13 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 import "../../assets/css/Navbar.css";
 import LanguageSelect from "./LanguageSelect";
+import LanguageContext from "../../context/LanguageContext";
 
 export default function Navbar() {
+    const { texts } = useContext(LanguageContext);
     const [toggle, setToggle] = useState(false);
 
     const closeMobileMenu = () => setToggle(false);
@@ -104,6 +106,7 @@ export default function Navbar() {
                             </HashLink>
                         </li>
                         <LanguageSelect />
+                        {texts.testText}
                     </ul>
                 </div>
             </nav>

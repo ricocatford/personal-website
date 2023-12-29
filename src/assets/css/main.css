@@ -166,22 +166,19 @@ body {
     0% {
         transform: rotate(0deg);
         border: 6px solid var(--creamy-white-color);
-        border-color: var(--creamy-white-color) transparent
-            var(--creamy-white-color) transparent;
+        border-color: var(--creamy-white-color) transparent;
     }
 
     50% {
         transform: rotate(180deg);
         border: 6px solid var(--berry-black-color);
-        border-color: var(--berry-black-color) transparent
-            var(--berry-black-color) transparent;
+        border-color: var(--berry-black-color) transparent;
     }
 
     100% {
         transform: rotate(360deg);
         border: 6px solid var(--creamy-white-color);
-        border-color: var(--creamy-white-color) transparent
-            var(--creamy-white-color) transparent;
+        border-color: var(--creamy-white-color) transparent;
     }
 }
 

@@ -16,19 +16,24 @@ export const LanguageProvider = ({ children }) => {
     const [language, setLanguage] = useState(defaultLanguage);
     const [texts, setTexts] = useState(translations[language]);
 
-    const handleLanguage = (e) => {
-        if (e.target.value === "en") {
+    const handleLanguage = (value) => {
+        if (value === "en") {
             setLanguage("en");
             setTexts(translations.en);
-        } else {
+        } else if (value === "es") {
             setLanguage("es");
             setTexts(translations.es);
         }
+        console.log(language);
     };
 
     const data = { texts, handleLanguage };
 
-    return <LanguageContext.Provider>{children}</LanguageContext.Provider>;
+    return (
+        <LanguageContext.Provider value={data}>
+            {children}
+        </LanguageContext.Provider>
+    );
 };
 
 export default LanguageContext;
