@@ -4,7 +4,7 @@ import "../../assets/css/Dropdown.css";
 import LanguageContext from "../../context/LanguageContext";
 
 export default function LanguageSelect() {
-    const { handleLanguage } = useContext(LanguageContext);
+    const { language, handleLanguage } = useContext(LanguageContext);
     const [toggleDropdownMenu, setToggleDropdownMenu] = useState(false);
     const handleToggle = () => {
         setToggleDropdownMenu(!toggleDropdownMenu);
@@ -26,21 +26,26 @@ export default function LanguageSelect() {
             {toggleDropdownMenu && (
                 <div className="dropdown__content__wrapper">
                     <div
-                        className="dropdown__content"
-                        value="en"
+                        className="dropdown__content flex"
                         onClick={() => handleLanguage("en")}
                     >
-                        English
-                        <span>
-                            <i className="fa-solid fa-check dropdown__option--active" />
-                        </span>
+                        <p>English</p>
+                        {language === "en" && (
+                            <span>
+                                <i className="fa-solid fa-check dropdown__option--active" />
+                            </span>
+                        )}
                     </div>
                     <div
-                        className="dropdown__content"
-                        value="es"
+                        className="dropdown__content flex"
                         onClick={() => handleLanguage("es")}
                     >
-                        Español
+                        <p>Español</p>
+                        {language === "es" && (
+                            <span>
+                                <i className="fa-solid fa-check dropdown__option--active" />
+                            </span>
+                        )}
                     </div>
                 </div>
             )}

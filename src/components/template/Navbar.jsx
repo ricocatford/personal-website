@@ -106,7 +106,7 @@ export default function Navbar() {
                             </HashLink>
                         </li>
                         <LanguageSelect />
-                        {texts.testText}
+                        {texts.testText.testText}
                     </ul>
                 </div>
             </nav>

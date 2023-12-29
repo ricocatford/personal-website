@@ -1,15 +1,12 @@
 import { createContext, useState } from "react";
+import data from "../data/translations.json";
 
 const LanguageContext = createContext();
 
 const defaultLanguage = "en";
 const translations = {
-    en: {
-        testText: "Hello",
-    },
-    es: {
-        testText: "Hola",
-    },
+    en: data[0],
+    es: data[1],
 };
 
 export const LanguageProvider = ({ children }) => {
@@ -24,10 +21,9 @@ export const LanguageProvider = ({ children }) => {
             setLanguage("es");
             setTexts(translations.es);
         }
-        console.log(language);
     };
 
-    const data = { texts, handleLanguage };
+    const data = { language, texts, handleLanguage };
 
     return (
         <LanguageContext.Provider value={data}>
