@@ -1,13 +1,9 @@
 import { createContext, useState } from "react";
-import data from "../data/translations.json";
+import translations from "../data/translations.json";
 
 const LanguageContext = createContext();
 
 const defaultLanguage = "en";
-const translations = {
-    en: data[0],
-    es: data[1],
-};
 
 export const LanguageProvider = ({ children }) => {
     const [language, setLanguage] = useState(defaultLanguage);

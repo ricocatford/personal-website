@@ -1,5 +1,5 @@
-[
-    {
+{
+    "en": {
         "navbarLinks": {
             "home": "Home",
             "about": "About",
@@ -12,7 +12,7 @@
             "paragraph": "Currently based in Asturias, Spain. I've achieved my diploma in Full-Stack Web Development at City of Bristol College. I'm passionate about pixel-perfect designs and reusable code!"
         }
     },
-    {
+    "es": {
         "navbarLinks": {
             "home": "Inicio",
             "about": "Sobre mí",
@@ -25,4 +25,4 @@
             "paragraph": "Actualmente viviendo en Asturias, España. He obtenido mi diploma en Desarrollo Web Full-Stack en City of Bristol College. Me apasionan los diseños perfectos al milímetro y el código reutilizable!"
         }
     }
-]
+}
