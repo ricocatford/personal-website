@@ -1,12 +1,28 @@
 [
     {
-        "testText": {
-            "testText": "Hello"
+        "navbarLinks": {
+            "home": "Home",
+            "about": "About",
+            "portfolio": "Portfolio",
+            "contact": "Contact"
+        },
+        "hero": {
+            "subheading": "Hello, I'm Ricardo Albarenque",
+            "heading": "Full-Stack Developer",
+            "paragraph": "Currently based in Asturias, Spain. I've achieved my diploma in Full-Stack Web Development at City of Bristol College. I'm passionate about pixel-perfect designs and reusable code!"
         }
     },
     {
-        "testText": {
-            "testText": "Hola"
+        "navbarLinks": {
+            "home": "Inicio",
+            "about": "Sobre mí",
+            "portfolio": "Proyectos",
+            "contact": "Contáctame"
+        },
+        "hero": {
+            "subheading": "Hola, soy Ricardo Albarenque",
+            "heading": "Desarrollador Full-Stack",
+            "paragraph": "Actualmente viviendo en Asturias, España. He obtenido mi diploma en Desarrollo Web Full-Stack en City of Bristol College. Me apasionan los diseños perfectos al milímetro y el código reutilizable!"
         }
     }
 ]

@@ -2,9 +2,11 @@ import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-import "../../assets/css/Navbar.css";
-import LanguageSelect from "./LanguageSelect";
 import LanguageContext from "../../context/LanguageContext";
+
+import LanguageSelect from "./LanguageSelect";
+
+import "../../assets/css/Navbar.css";
 
 export default function Navbar() {
     const { texts } = useContext(LanguageContext);
@@ -64,7 +66,7 @@ export default function Navbar() {
                                 <span>
                                     <i className="fa-solid fa-house navbar__link__icon" />
                                 </span>
-                                Home
+                                {texts.navbarLinks.home}
                             </Link>
                         </li>
                         <li>
@@ -76,7 +78,7 @@ export default function Navbar() {
                                 <span>
                                     <i className="fa-solid fa-id-card navbar__link__icon" />
                                 </span>
-                                About
+                                {texts.navbarLinks.about}
                             </Link>
                         </li>
                         <li>
@@ -89,7 +91,7 @@ export default function Navbar() {
                                 <span>
                                     <i className="fa-solid fa-briefcase navbar__link__icon" />
                                 </span>
-                                Portfolio
+                                {texts.navbarLinks.portfolio}
                             </HashLink>
                         </li>
                         <li>
@@ -102,11 +104,10 @@ export default function Navbar() {
                                 <span>
                                     <i className="fa-solid fa-paper-plane navbar__link__icon" />
                                 </span>
-                                Contact
+                                {texts.navbarLinks.contact}
                             </HashLink>
                         </li>
                         <LanguageSelect />
-                        {texts.testText.testText}
                     </ul>
                 </div>
             </nav>
