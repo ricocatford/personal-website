@@ -10,13 +10,8 @@ export const LanguageProvider = ({ children }) => {
     const [texts, setTexts] = useState(translations[language]);
 
     const handleLanguage = (value) => {
-        if (value === "en") {
-            setLanguage("en");
-            setTexts(translations.en);
-        } else if (value === "es") {
-            setLanguage("es");
-            setTexts(translations.es);
-        }
+        setLanguage(value);
+        setTexts(translations[value]);
     };
 
     const data = { language, texts, handleLanguage };
