@@ -52,6 +52,12 @@
     background: transparent;
 }
 
+.navbar__divider {
+    display: none;
+    border: 1px solid var(--dark-gray-color);
+    width: 100%;
+}
+
 /*------------------- MEDIA QUERIES -------------------*/
 
 @media screen and (max-width: 1024px) {
@@ -92,5 +98,9 @@
 
     .navbar__link__icon {
         display: inline-block;
+    }
+
+    .navbar__divider {
+        display: block;
     }
 }

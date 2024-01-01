@@ -107,6 +107,7 @@ export default function Navbar() {
                                 {texts.navbarLinks.contact}
                             </HashLink>
                         </li>
+                        <hr className="navbar__divider" />
                         <LanguageSelect />
                     </ul>
                 </div>

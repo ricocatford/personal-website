@@ -1,7 +1,8 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+
+import LanguageContext from "../../context/LanguageContext";
 
 import "../../assets/css/Dropdown.css";
-import LanguageContext from "../../context/LanguageContext";
 
 export default function LanguageSelect() {
     const { language, handleLanguage } = useContext(LanguageContext);
@@ -9,6 +10,14 @@ export default function LanguageSelect() {
     const handleToggle = () => {
         setToggleDropdownMenu(!toggleDropdownMenu);
     };
+
+    useEffect(() => {
+        return () => {
+            if (window.innerWidth <= 868) {
+                setToggleDropdownMenu(true);
+            }
+        };
+    }, []);
 
     return (
         <div className="dropdown">
