@@ -39,7 +39,6 @@ export default function Navbar() {
                             className="navbar__logo"
                         />
                     </Link>
-
                     <button
                         className="navbar__toggler"
                         onClick={() => setToggle(!toggle)}
@@ -107,7 +106,6 @@ export default function Navbar() {
                                 {texts.navbarLinks.contact}
                             </HashLink>
                         </li>
-                        <hr className="navbar__divider" />
                         <LanguageSelect />
                     </ul>
                 </div>

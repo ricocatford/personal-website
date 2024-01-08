@@ -9,6 +9,7 @@
     max-width: var(--max-width);
     margin: auto;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navbar__logo {
@@ -17,9 +18,9 @@
 
 .navbar__nav {
     display: flex;
-    gap: 2rem;
+    gap: 1.25rem;
     list-style: none;
-    align-self: center;
+    align-items: center;
 }
 
 .navbar__link {
@@ -50,12 +51,6 @@
     border: none;
     outline: none;
     background: transparent;
-}
-
-.navbar__divider {
-    display: none;
-    border: 1px solid var(--dark-gray-color);
-    width: 100%;
 }
 
 /*------------------- MEDIA QUERIES -------------------*/

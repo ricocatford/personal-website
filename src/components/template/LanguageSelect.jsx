@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useRef, useEffect, useState } from "react";
 
 import LanguageContext from "../../context/LanguageContext";
 
@@ -7,27 +7,39 @@ import "../../assets/css/Dropdown.css";
 export default function LanguageSelect() {
     const { language, handleLanguage } = useContext(LanguageContext);
     const [toggleDropdownMenu, setToggleDropdownMenu] = useState(false);
+    const dropdownRef = useRef(null);
+
     const handleToggle = () => {
         setToggleDropdownMenu(!toggleDropdownMenu);
     };
+    const toggleDropdownMenuOnOutsideClick = (ref) => {
+        useEffect(() => {
+            const handleClickOutside = (event) => {
+                if (ref.current && !ref.current.contains(event.target)) {
+                    setToggleDropdownMenu(false);
+                }
+            };
+            document.addEventListener("mousedown", handleClickOutside);
+            return () => {
+                document.removeEventListener("mousedown", handleClickOutside);
+            };
+        }, [ref]);
+    };
 
-    useEffect(() => {
-        return () => {
-            if (window.innerWidth <= 868) {
-                setToggleDropdownMenu(true);
-            }
-        };
-    }, []);
+    toggleDropdownMenuOnOutsideClick(dropdownRef);
 
     return (
-        <div className="dropdown">
+        <div className="dropdown" ref={dropdownRef}>
             <button className="dropdown__btn" onClick={handleToggle}>
-                <i className="fa-solid fa-earth-europe" />
+                <span className="dropdown__icon">
+                    <i className="fa-solid fa-earth-europe" />
+                </span>
+                <p className="dropdown__text">{language}</p>
                 <span>
                     {!toggleDropdownMenu ? (
-                        <i className="fa-solid fa-caret-down dropdown__caret--down" />
+                        <i className="fa-solid fa-chevron-down dropdown__chevron--down" />
                     ) : (
-                        <i className="fa-solid fa-caret-down dropdown__caret--rotate" />
+                        <i className="fa-solid fa-chevron-down dropdown__chevron--rotate" />
                     )}
                 </span>
             </button>
@@ -41,7 +53,7 @@ export default function LanguageSelect() {
                         <p>English</p>
                         {language === "en" && (
                             <span>
-                                <i className="fa-solid fa-check dropdown__option--active" />
+                                <i className="fa-solid fa-circle-check dropdown__option--active" />
                             </span>
                         )}
                     </div>
@@ -52,7 +64,7 @@ export default function LanguageSelect() {
                         <p>Español</p>
                         {language === "es" && (
                             <span>
-                                <i className="fa-solid fa-check dropdown__option--active" />
+                                <i className="fa-solid fa-circle-check dropdown__option--active" />
                             </span>
                         )}
                     </div>
