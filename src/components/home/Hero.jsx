@@ -20,7 +20,7 @@ export default function Hero() {
                     <h1 className="hero__heading">{texts.hero.heading}</h1>
                     <p className="hero__text">{texts.hero.paragraph}</p>
                     <Link to="about" className="btn hero__btn">
-                        Learn More
+                        {texts.hero.button}
                         <span>
                             <i className="fa-solid fa-arrow-right btn__icon" />
                         </span>

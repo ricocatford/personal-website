@@ -55,7 +55,7 @@
     border-radius: 0.375em;
     font-size: 1.15em;
     font-weight: 600;
-    min-width: 140px;
+    min-width: 130px;
 }
 
 .dropdown__content {
@@ -64,6 +64,7 @@
     justify-content: space-between;
     color: var(--dark-gray-color);
     border-radius: 0.25em;
+    transition: all 0.2s ease;
 }
 
 .dropdown__content:hover {
@@ -78,5 +79,10 @@
 @media screen and (max-width: 868px) {
     .dropdown {
         padding: 0.5rem 1rem;
+        align-self: center;
+    }
+
+    .dropdown__content__wrapper {
+        right: 0;
     }
 }

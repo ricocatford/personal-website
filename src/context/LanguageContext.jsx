@@ -8,13 +8,19 @@ const defaultLanguage = "en";
 export const LanguageProvider = ({ children }) => {
     const [language, setLanguage] = useState(defaultLanguage);
     const [texts, setTexts] = useState(translations[language]);
+    const languages = [
+        { languageName: "English", languageCode: "en" },
+        { languageName: "Español", languageCode: "es" },
+    ];
+
+    // const categorizeLanguage = () => {};
 
     const handleLanguage = (value) => {
         setLanguage(value);
         setTexts(translations[value]);
     };
 
-    const data = { language, texts, handleLanguage };
+    const data = { language, handleLanguage, languages, texts};
 
     return (
         <LanguageContext.Provider value={data}>

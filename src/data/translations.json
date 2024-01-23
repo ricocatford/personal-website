@@ -1,5 +1,6 @@
 {
     "en": {
+        "name": "English",
         "navbarLinks": {
             "home": "Home",
             "about": "About",
@@ -9,10 +10,26 @@
         "hero": {
             "subheading": "Hello, I'm Ricardo Albarenque",
             "heading": "Full-Stack Developer",
-            "paragraph": "Currently based in Asturias, Spain. I've achieved my diploma in Full-Stack Web Development at City of Bristol College. I'm passionate about pixel-perfect designs and reusable code!"
+            "paragraph": "Currently based in Asturias, Spain. I've achieved my diploma in Full-Stack Web Development at City of Bristol College. I'm passionate about pixel-perfect designs and reusable code!",
+            "button": "Learn More"
+        },
+        "overview": {
+            "uxUi": {
+                "heading": "UX / UI",
+                "paragraph": "I create designs that are visually appealing, fully responsive and accessible. Ensuring a great user experience is a top priority for me, implementing high accessibility standards to make my designs inclusive and user-friendly."
+            },
+            "development": {
+                "heading": "Development",
+                "paragraph": "I specialize in working with TypeScript, ReactJS, and ExpressJS. These technologies allow me to build dynamic and efficient web applications. Additionally, I have experience working with jQuery, Flask, and Django."
+            },
+            "performance": {
+                "heading": "Performance",
+                "paragraph": "I place great importance on writing code that delivers high performance. While optimizing for speed and efficiency, I also prioritize code readability and maintainability. By staying up to date with the latest technologies and best practices, I ensure to be aligned with industry standards."
+            }
         }
     },
     "es": {
+        "name": "Español",
         "navbarLinks": {
             "home": "Inicio",
             "about": "Sobre mí",
@@ -22,7 +39,22 @@
         "hero": {
             "subheading": "Hola, soy Ricardo Albarenque",
             "heading": "Desarrollador Full-Stack",
-            "paragraph": "Actualmente viviendo en Asturias, España. He obtenido mi diploma en Desarrollo Web Full-Stack en City of Bristol College. Me apasionan los diseños perfectos al milímetro y el código reutilizable!"
+            "paragraph": "Actualmente viviendo en Asturias, España. He obtenido mi diploma en Desarrollo Web Full-Stack en City of Bristol College. Me apasionan los diseños perfectos al milímetro y el código reutilizable!",
+            "button": "Leer Más"
+        },
+        "overview": {
+            "uxUi": {
+                "heading": "UX / UI",
+                "paragraph": "Creo diseños que son visualmente atractivos, totalmente responsive y accessibles. Asegurar una gran experiencia para el usuario es una prioridad para mi, implementando estándares de alta accesibilidad para hacer mis diseños inclusivos e intuitivos para el usuario."
+            },
+            "development": {
+                "heading": "Desarrollo",
+                "paragraph": "Me especializo en trabajar con TypeScript, ReactJS y ExpressJS. Estas tecnologías me permiten construir aplicaciones web dinámicas y eficientes. Adicionalmente, tengo experiencia con jQuery, Flash y Django."
+            },
+            "performance": {
+                "heading": "Rendimiento",
+                "paragraph": "Le doy gran importancia a escribir código que tenga buen rendimiento. A la vez que optimizo para eficiencia y velocidad, también priorizo que el código sea entendible y mantenible. Estando al día con las mejores tecnologías y prácticas, aseguro mantenerme a la altura de los estándares de la industria."
+            }
         }
     }
 }

@@ -2,16 +2,24 @@ import { useContext, useRef, useEffect, useState } from "react";
 
 import LanguageContext from "../../context/LanguageContext";
 
+import DropdownItem from "./DropdownItem";
+
 import "../../assets/css/Dropdown.css";
 
 export default function LanguageSelect() {
-    const { language, handleLanguage } = useContext(LanguageContext);
+    const { languages, language, handleLanguage } = useContext(LanguageContext);
     const [toggleDropdownMenu, setToggleDropdownMenu] = useState(false);
     const dropdownRef = useRef(null);
 
     const handleToggle = () => {
         setToggleDropdownMenu(!toggleDropdownMenu);
     };
+
+    const handleDropdownItemClick = (language) => {
+        handleLanguage(language);
+        handleToggle();
+    };
+
     const toggleDropdownMenuOnOutsideClick = (ref) => {
         useEffect(() => {
             const handleClickOutside = (event) => {
@@ -43,10 +51,27 @@ export default function LanguageSelect() {
                     )}
                 </span>
             </button>
-
             {toggleDropdownMenu && (
                 <div className="dropdown__content__wrapper">
-                    <div
+                    {languages.map((languageItem) => (
+                        <DropdownItem
+                            key={languageItem.languageName}
+                            onClick={() =>
+                                handleDropdownItemClick(
+                                    languageItem.languageCode
+                                )
+                            }
+                            value={languageItem.languageName}
+                            checked={languageItem.languageCode === language}
+                        />
+                    ))}
+
+                    {/* <DropdownItem
+                        onClick={() => handleLanguage("es")}
+                        value={"Español"}
+                        checked={false}
+                    /> */}
+                    {/* <div
                         className="dropdown__content flex"
                         onClick={() => handleLanguage("en")}
                     >
@@ -56,8 +81,8 @@ export default function LanguageSelect() {
                                 <i className="fa-solid fa-circle-check dropdown__option--active" />
                             </span>
                         )}
-                    </div>
-                    <div
+                    </div> */}
+                    {/* <div
                         className="dropdown__content flex"
                         onClick={() => handleLanguage("es")}
                     >
@@ -67,7 +92,7 @@ export default function LanguageSelect() {
                                 <i className="fa-solid fa-circle-check dropdown__option--active" />
                             </span>
                         )}
-                    </div>
+                    </div> */}
                 </div>
             )}
         </div>
