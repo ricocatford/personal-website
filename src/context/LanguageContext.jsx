@@ -13,14 +13,12 @@ export const LanguageProvider = ({ children }) => {
         { languageName: "Español", languageCode: "es" },
     ];
 
-    // const categorizeLanguage = () => {};
-
     const handleLanguage = (value) => {
         setLanguage(value);
         setTexts(translations[value]);
     };
 
-    const data = { language, handleLanguage, languages, texts};
+    const data = { language, handleLanguage, languages, texts };
 
     return (
         <LanguageContext.Provider value={data}>

@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import LanguageContext from "../../context/LanguageContext";
 
 import Form from "./Form";
 import GitHub from "./GitHub";
@@ -6,6 +7,8 @@ import GitHub from "./GitHub";
 import "../../assets/css/Contact.css";
 
 export default function Contact() {
+    const { texts } = useContext(LanguageContext);
+
     const [activeTab, setActiveTab] = useState("mail");
 
     const activeTabSelector = {
@@ -18,14 +21,9 @@ export default function Contact() {
         <div className="container--fluid bg-light">
             <div className="container" id="contact">
                 <h3 className="subheading contact__subheading">
-                    Let's connect and have a chat!
+                    {texts.contact.heading}
                 </h3>
-                <p className="contact__text">
-                    If you wish to contact me, hire me, or start a project with
-                    my help, I'm always open to ideas and most likely would
-                    enjoy working with you! Below you can write me an email or
-                    find my socials, just click on the different tabs.
-                </p>
+                <p className="contact__text">{texts.contact.paragraph}</p>
                 <div className="contact__container flex">
                     <div className="contact__content__wrapper box-shadow">
                         {activeTabSelector[activeTab]}

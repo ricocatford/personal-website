@@ -1,12 +1,17 @@
+import { useContext } from "react";
+
+import LanguageContext from "../../context/LanguageContext";
+
 import "../../assets/css/Footer.css";
 
 export default function Footer() {
+    const { texts } = useContext(LanguageContext);
+
     return (
         <footer className="container--fluid">
             <div className="footer__container">
                 <p className="footer__text text-center">
-                    &copy; Copyright 2023 - Design and content by Ricardo
-                    Albarenque
+                    {texts.footer.content}
                 </p>
             </div>
         </footer>

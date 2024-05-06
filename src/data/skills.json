@@ -8,11 +8,11 @@
             "CSS",
             "JavaScript",
             "TypeScript",
+            "ReactJS",
+            "NextJS",
             "jQuery",
             "Bootstrap",
-            "MaterializeCSS",
-            "ReactJS",
-            "NextJS"
+            "MaterializeCSS"
         ]
     },
     {
@@ -21,6 +21,7 @@
         "skillsCategory": "Back-end",
         "skills": [
             "NodeJS",
+            "NestJS",
             "ExpressJS",
             "JavaScript",
             "TypeScript",

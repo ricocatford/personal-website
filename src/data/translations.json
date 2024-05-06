@@ -1,40 +1,99 @@
 {
     "en": {
         "name": "English",
-        "navbarLinks": {
+        "navbar": {
             "home": "Home",
             "about": "About",
             "portfolio": "Portfolio",
             "contact": "Contact"
         },
+        "footer": {
+            "content": "© Copyright 2023-2024. Design and content by Ricardo Albarenque."
+        },
         "hero": {
             "subheading": "Hello, I'm Ricardo Albarenque",
             "heading": "Full-Stack Developer",
             "paragraph": "Currently based in Asturias, Spain. I've achieved my diploma in Full-Stack Web Development at City of Bristol College. I'm passionate about pixel-perfect designs and reusable code!",
-            "button": "Learn More"
+            "button": "Read More"
         },
         "overview": {
             "uxUi": {
                 "heading": "UX / UI",
-                "paragraph": "I create designs that are visually appealing, fully responsive and accessible. Ensuring a great user experience is a top priority for me, implementing high accessibility standards to make my designs inclusive and user-friendly."
+                "paragraph": "Creating designs that are visually appealing, fully responsive and accessible. Ensuring a great user experience is a top priority for me, implementing high accessibility standards to make my designs inclusive and user-friendly."
             },
             "development": {
                 "heading": "Development",
-                "paragraph": "I specialize in working with TypeScript, ReactJS, and ExpressJS. These technologies allow me to build dynamic and efficient web applications. Additionally, I have experience working with jQuery, Flask, and Django."
+                "paragraph": "Specialized in working with TypeScript, React (Next), and Node. These technologies allow me to build dynamic and efficient web applications."
             },
             "performance": {
                 "heading": "Performance",
-                "paragraph": "I place great importance on writing code that delivers high performance. While optimizing for speed and efficiency, I also prioritize code readability and maintainability. By staying up to date with the latest technologies and best practices, I ensure to be aligned with industry standards."
+                "paragraph": "Placing great importance on writing code that delivers high performance. While optimizing for speed and efficiency, I also prioritize code readability and maintainability."
             }
+        },
+        "portfolio": {
+            "heading": "Projects",
+            "buttonsLinks": {
+                "live": "See Live",
+                "repository": "Source Code"
+            },
+            "projects": [
+                {
+                    "id": 0,
+                    "name": "Black Dog Shop",
+                    "description": "eCommerce for skateboards and clothing products with login system. Allows anonymous or registered users to checkout using Stripe payments API. Registered users have the option to save delivery information and review their order history.",
+                    "image": "images/projects/black-dog-shop.png",
+                    "stack": [
+                        "Python",
+                        "Django",
+                        "SQLite",
+                        "Bootstrap",
+                        "Stripe",
+                        "AWS"
+                    ],
+                    "links": {
+                        "repository": "https://github.com/ricocatford/black-dog-shop",
+                        "live": "https://blackdogshop.herokuapp.com"
+                    }
+                },
+                {
+                    "id": 1,
+                    "name": "BonTeeth",
+                    "description": "Platform for booking and managing appointments with login system. There is two possible scenarios for the usage of this app, as a regular user (customer) or as an admin (business owner), each of them naturally providing different features. I can provide details for admin account on request.",
+                    "image": "images/projects/bonteeth.png",
+                    "stack": ["Python", "Flask", "MaterializeCSS", "MongoDB"],
+                    "links": {
+                        "repository": "https://github.com/ricocatford/bonteeth-project",
+                        "live": "https://bonteeth.herokuapp.com"
+                    }
+                },
+                {
+                    "id": 2,
+                    "name": "Guess the Word",
+                    "description": "Interactive game for learning english vocabulary. Given a description of the word, you have to guess the missing characters. Game is powered by two free RESTful API.",
+                    "image": "images/projects/guess-the-word.png",
+                    "stack": ["JavaScript", "jQuery", "RESTful API"],
+                    "links": {
+                        "repository": "https://github.com/ricocatford/guess-the-word",
+                        "live": "https://ricocatford.github.io/guess-the-word/"
+                    }
+                }
+            ]
+        },
+        "contact": {
+            "heading": "Let's connect and have a chat!",
+            "paragraph": "If you wish to contact me, hire me, or start a project with my help, I'm always open to ideas and most likely would enjoy working with you! Below you can write me an email or find my socials, just click on the different tabs."
         }
     },
     "es": {
         "name": "Español",
-        "navbarLinks": {
+        "navbar": {
             "home": "Inicio",
             "about": "Sobre mí",
             "portfolio": "Proyectos",
             "contact": "Contáctame"
+        },
+        "footer": {
+            "content": "© Copyright 2023-2024. Diseño y contenido por Ricardo Albarenque"
         },
         "hero": {
             "subheading": "Hola, soy Ricardo Albarenque",
@@ -45,16 +104,69 @@
         "overview": {
             "uxUi": {
                 "heading": "UX / UI",
-                "paragraph": "Creo diseños que son visualmente atractivos, totalmente responsive y accessibles. Asegurar una gran experiencia para el usuario es una prioridad para mi, implementando estándares de alta accesibilidad para hacer mis diseños inclusivos e intuitivos para el usuario."
+                "paragraph": "Creo diseños que son visualmente atractivos, totalmente responsive y accessibles. Asegurar una gran experiencia es una prioridad para mi, utilizando estándares de alta accesibilidad, mis diseños son inclusivos e intuitivos para el usuario."
             },
             "development": {
                 "heading": "Desarrollo",
-                "paragraph": "Me especializo en trabajar con TypeScript, ReactJS y ExpressJS. Estas tecnologías me permiten construir aplicaciones web dinámicas y eficientes. Adicionalmente, tengo experiencia con jQuery, Flash y Django."
+                "paragraph": "Me especializo en trabajar con TypeScript, React (Next) y Node. Estas tecnologías me permiten construir aplicaciones web dinámicas y eficientes."
             },
             "performance": {
                 "heading": "Rendimiento",
-                "paragraph": "Le doy gran importancia a escribir código que tenga buen rendimiento. A la vez que optimizo para eficiencia y velocidad, también priorizo que el código sea entendible y mantenible. Estando al día con las mejores tecnologías y prácticas, aseguro mantenerme a la altura de los estándares de la industria."
+                "paragraph": "Le doy gran importancia a escribir código que tenga buen rendimiento. A la vez que optimizo para eficiencia y velocidad, también priorizo que el código sea entendible y mantenible."
             }
+        },
+        "portfolio": {
+            "heading": "Proyectos",
+            "buttonsLinks": {
+                "live": "Ver proyecto",
+                "repository": "Código"
+            },
+            "projects": [
+                {
+                    "id": 0,
+                    "name": "Tienda Black Dog",
+                    "description": "Tienda para productos de skateboard con un sistema de inicio de sesión. Permite a usuarios anónimos o registrados, realizar y pagar pedidos con la Stripe API. Los usuarios registrados tienen la posibilidad de guardar sus datos de envío y pueden revistar el historial de pedidos.",
+                    "image": "images/projects/black-dog-shop.png",
+                    "stack": [
+                        "Python",
+                        "Django",
+                        "SQLite",
+                        "Bootstrap",
+                        "Stripe",
+                        "AWS"
+                    ],
+                    "links": {
+                        "repository": "https://github.com/ricocatford/black-dog-shop",
+                        "live": "https://blackdogshop.herokuapp.com"
+                    }
+                },
+                {
+                    "id": 1,
+                    "name": "BonTeeth",
+                    "description": "Plataforma para reserva y manejo de citas con sistema de autentificación. Hay dos posibles casos de uso, como usuario normal (cliente) o como administrador (propietario del negocio). Si se requiere, puedo proveer los datos de la cuenta de administrador.",
+                    "image": "images/projects/bonteeth.png",
+                    "stack": ["Python", "Flask", "MaterializeCSS", "MongoDB"],
+                    "links": {
+                        "repository": "https://github.com/ricocatford/bonteeth-project",
+                        "live": "https://bonteeth.herokuapp.com"
+                    }
+                },
+                {
+                    "id": 2,
+                    "name": "Guess the Word",
+                    "description": "Juego interactivo para aprender vocabulario en inglés. Dada la descripción o una pista de la palabra, hay que adivinar las letras que faltan. El juego utiliza dos RESTful API libres.",
+                    "image": "images/projects/guess-the-word.png",
+                    "stack": ["JavaScript", "jQuery", "RESTful API"],
+                    "links": {
+                        "repository": "https://github.com/ricocatford/guess-the-word",
+                        "live": "https://ricocatford.github.io/guess-the-word/"
+                    }
+                }
+            ]
+        },
+        "contact": {
+            "heading": "¡Pongámonos en contacto y charlemos!",
+            "paragraph": "Si deseas contactarme, contratarme, o empezar un proyecto con mi ayuda, siempre estoy abierto a ideas y seguramente disfrute trabajando contigo. Debajo puedes escribirme un correo electrónico y encontrar las plataformas donde estoy, simplemente haz click en la pestaña que desees."
         }
     }
 }

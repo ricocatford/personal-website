@@ -65,7 +65,7 @@ export default function Navbar() {
                                 <span>
                                     <i className="fa-solid fa-house navbar__link__icon" />
                                 </span>
-                                {texts.navbarLinks.home}
+                                {texts.navbar.home}
                             </Link>
                         </li>
                         <li>
@@ -77,7 +77,7 @@ export default function Navbar() {
                                 <span>
                                     <i className="fa-solid fa-id-card navbar__link__icon" />
                                 </span>
-                                {texts.navbarLinks.about}
+                                {texts.navbar.about}
                             </Link>
                         </li>
                         <li>
@@ -90,7 +90,7 @@ export default function Navbar() {
                                 <span>
                                     <i className="fa-solid fa-briefcase navbar__link__icon" />
                                 </span>
-                                {texts.navbarLinks.portfolio}
+                                {texts.navbar.portfolio}
                             </HashLink>
                         </li>
                         <li>
@@ -103,7 +103,7 @@ export default function Navbar() {
                                 <span>
                                     <i className="fa-solid fa-paper-plane navbar__link__icon" />
                                 </span>
-                                {texts.navbarLinks.contact}
+                                {texts.navbar.contact}
                             </HashLink>
                         </li>
                         <LanguageSelect />
