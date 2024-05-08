@@ -8,8 +8,8 @@
             "CSS",
             "JavaScript",
             "TypeScript",
-            "ReactJS",
-            "NextJS",
+            "React.js",
+            "Next.js",
             "jQuery",
             "Bootstrap",
             "MaterializeCSS"
@@ -20,9 +20,9 @@
         "icon": "fa-solid fa-bolt",
         "skillsCategory": "Back-end",
         "skills": [
-            "NodeJS",
-            "NestJS",
-            "ExpressJS",
+            "Node.js",
+            "Nest.js",
+            "Express.js",
             "JavaScript",
             "TypeScript",
             "JSON Web Token",
@@ -42,7 +42,7 @@
             "PostgresSQL",
             "Sequelize",
             "MongoDB",
-            "MongooseJS",
+            "Mongoose.js",
             "PyMongo"
         ]
     },
@@ -53,6 +53,7 @@
         "skills": [
             "VS Code",
             "PyCharm",
+            "Figma",
             "Adobe Photoshop",
             "DBeaver",
             "Postman",
@@ -71,7 +72,7 @@
         "id": 5,
         "icon": "fa-brands fa-stripe-s",
         "skillsCategory": "Services",
-        "skills": ["Stripe", "EmailJS", "ElephantSQL"]
+        "skills": ["Stripe", "Email.js", "ElephantSQL"]
     },
     {
         "id": 6,
