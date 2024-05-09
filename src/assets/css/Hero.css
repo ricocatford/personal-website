@@ -34,8 +34,8 @@
     margin: 0 auto;
     background: linear-gradient(
         270deg,
-        var(--light-blue-color),
-        var(--sky-blue-color)
+        var(--light-purple-color),
+        var(--dark-purple-color)
     );
     color: var(--creamy-white-color);
 }
