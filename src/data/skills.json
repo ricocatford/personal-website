@@ -8,11 +8,11 @@
             "CSS",
             "JavaScript",
             "TypeScript",
+            "React.js",
+            "Next.js",
             "jQuery",
             "Bootstrap",
-            "MaterializeCSS",
-            "ReactJS",
-            "NextJS"
+            "MaterializeCSS"
         ]
     },
     {
@@ -20,8 +20,9 @@
         "icon": "fa-solid fa-bolt",
         "skillsCategory": "Back-end",
         "skills": [
-            "NodeJS",
-            "ExpressJS",
+            "Node.js",
+            "Nest.js",
+            "Express.js",
             "JavaScript",
             "TypeScript",
             "JSON Web Token",
@@ -41,7 +42,7 @@
             "PostgresSQL",
             "Sequelize",
             "MongoDB",
-            "MongooseJS",
+            "Mongoose.js",
             "PyMongo"
         ]
     },
@@ -52,6 +53,7 @@
         "skills": [
             "VS Code",
             "PyCharm",
+            "Figma",
             "Adobe Photoshop",
             "DBeaver",
             "Postman",
@@ -70,12 +72,20 @@
         "id": 5,
         "icon": "fa-brands fa-stripe-s",
         "skillsCategory": "Services",
-        "skills": ["Stripe", "EmailJS", "ElephantSQL"]
+        "skills": ["Stripe", "Email.js", "ElephantSQL"]
     },
     {
         "id": 6,
         "icon": "fa-solid fa-compass-drafting",
         "skillsCategory": "Design and Architecture",
-        "skills": ["RESTful API", "SEO", "BEM", "OOP", "ORM"]
+        "skills": [
+            "RESTful API",
+            "SEO",
+            "BEM",
+            "Hexagonal Architecture",
+            "OOP",
+            "ORM",
+            "Scrum"
+        ]
     }
 ]

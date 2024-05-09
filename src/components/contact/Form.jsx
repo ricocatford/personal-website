@@ -1,10 +1,13 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useContext } from "react";
+
+import LanguageContext from "../../context/LanguageContext";
 
 import emailjs from "@emailjs/browser";
 
 import "../../assets/css/Contact.css";
 
 export default function Form() {
+    const { texts } = useContext(LanguageContext);
     const form = useRef();
 
     const [showConfirmation, setShowConfirmation] = useState(false);
@@ -30,8 +33,7 @@ export default function Form() {
         <div className="contact__tab flex justify-center align-center">
             {showConfirmation ? (
                 <h5 className="form__feedback__text text-center">
-                    Thank you very much for getting it touch. I will reply as
-                    soon as possible!
+                    {texts.contact.form.confirmation}
                 </h5>
             ) : (
                 <form
@@ -42,43 +44,40 @@ export default function Form() {
                     <div className="flex justify-between">
                         <div className="form__field flex">
                             <label htmlFor="user_name" className="form__label">
-                                Name *
+                                {texts.contact.form.name}
                             </label>
                             <input
                                 className="form__input"
                                 name="user_name"
                                 type="text"
-                                placeholder="Your name"
                                 required
                             />
                         </div>
                         <div className="form__field">
                             <label htmlFor="user_name" className="form__label">
-                                Email *
+                                {texts.contact.form.email}
                             </label>
                             <input
                                 className="form__input"
                                 name="user_name"
                                 type="email"
-                                placeholder="Your email"
                                 required
                             />
                         </div>
                     </div>
                     <div className="form__field">
                         <label htmlFor="message" className="form__label">
-                            Message *
+                            {texts.contact.form.message}
                         </label>
                         <textarea
                             className="form__input"
                             name="message"
-                            placeholder="Your message"
                             required
                         />
                     </div>
                     <div className="flex justify-center">
                         <button type="submit" className="btn btn--primary">
-                            Submit{" "}
+                            {texts.contact.form.submit}{" "}
                             <i className="fa-solid fa-paper-plane btn__icon" />
                         </button>
                     </div>

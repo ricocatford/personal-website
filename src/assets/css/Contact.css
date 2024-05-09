@@ -199,6 +199,13 @@ textarea.form__input {
 
 /*------------------- LINKEDIN -------------------*/
 
+.linkedin__container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 /*------------------- MEDIA QUERIES -------------------*/
 
 @media screen and (max-width: 1024px) {

@@ -1,0 +1,230 @@
+{
+    "en": {
+        "name": "English",
+        "navbar": {
+            "home": "Home",
+            "about": "About",
+            "portfolio": "Portfolio",
+            "contact": "Contact"
+        },
+        "footer": {
+            "content": "Copyright © 2023-2024. Design and content by Ricardo Albarenque."
+        },
+        "hero": {
+            "subheading": "Hello, I'm Ricardo Albarenque",
+            "heading": "Full-Stack Developer",
+            "paragraph": "Currently based in Asturias, Spain. I've achieved my diploma in Full-Stack Web Development at City of Bristol College. I'm passionate about pixel-perfect designs and reusable code!",
+            "button": "Read more"
+        },
+        "overview": {
+            "uxUi": {
+                "heading": "UX / UI",
+                "paragraph": "Creating designs that are visually appealing, fully responsive and accessible. Ensuring a great user experience is a top priority for me, implementing high accessibility standards to make my designs inclusive and user-friendly."
+            },
+            "development": {
+                "heading": "Development",
+                "paragraph": "Specialized in working with TypeScript, React (Next), and Node. These technologies allow me to build dynamic and efficient web applications."
+            },
+            "performance": {
+                "heading": "Performance",
+                "paragraph": "Placing great importance on writing code that delivers high performance. While optimizing for speed and efficiency, I also prioritize code readability and maintainability."
+            }
+        },
+        "portfolio": {
+            "heading": "Projects",
+            "buttonsLinks": {
+                "live": "See Live",
+                "repository": "Source Code"
+            },
+            "projects": [
+                {
+                    "id": 0,
+                    "name": "Black Dog Shop",
+                    "description": "eCommerce for skateboards and clothing products with login system. Allows anonymous or registered users to checkout using Stripe payments API. Registered users have the option to save delivery information and review their order history.",
+                    "image": "images/projects/black-dog-shop.png",
+                    "stack": [
+                        "Python",
+                        "Django",
+                        "SQLite",
+                        "Bootstrap",
+                        "Stripe",
+                        "AWS"
+                    ],
+                    "links": {
+                        "repository": "https://github.com/ricocatford/black-dog-shop",
+                        "live": "https://blackdogshop.herokuapp.com"
+                    }
+                },
+                {
+                    "id": 1,
+                    "name": "BonTeeth",
+                    "description": "Platform for booking and managing appointments with login system. There is two possible scenarios for the usage of this app, as a regular user (customer) or as an admin (business owner), each of them naturally providing different features. I can provide details for admin account on request.",
+                    "image": "images/projects/bonteeth.png",
+                    "stack": ["Python", "Flask", "MaterializeCSS", "MongoDB"],
+                    "links": {
+                        "repository": "https://github.com/ricocatford/bonteeth-project",
+                        "live": "https://bonteeth.herokuapp.com"
+                    }
+                },
+                {
+                    "id": 2,
+                    "name": "Guess the Word",
+                    "description": "Interactive game for learning english vocabulary. Given a description of the word, you have to guess the missing characters. Game is powered by two free RESTful API.",
+                    "image": "images/projects/guess-the-word.png",
+                    "stack": ["JavaScript", "jQuery", "RESTful API"],
+                    "links": {
+                        "repository": "https://github.com/ricocatford/guess-the-word",
+                        "live": "https://ricocatford.github.io/guess-the-word/"
+                    }
+                }
+            ]
+        },
+        "contact": {
+            "heading": "Let's connect and have a chat!",
+            "paragraph": "If you wish to contact me, hire me, or start a project with my help, I'm always open to ideas and most likely would enjoy working with you! Below you can write me an email or find my socials, just click on the different tabs.",
+            "form": {
+                "name": "Name",
+                "email": "Email",
+                "message": "Message",
+                "confirmation": "Thank you very much for getting in touch. I will reply as soon as possible!",
+                "submit": "Submit"
+            },
+            "github": {
+                "link": "See on GitHub"
+            },
+            "linkedin": {
+                "link": "See on LinkedIn"
+            }
+        },
+        "about": {
+            "bio": {
+                "paragraphs": [
+                    "Hello! My name is Ricardo Albarenque, but feel free to call me Rico. I was born in Argentina and raised in Spain. Recently moved back to Spain after seven years in London.",
+                    "Technology has always been a part of my life, starting from my early days as a kid when I got my hands on my first PC with Windows 98. When my family moved to Spain during my teenage years, I ventured into website development using tools like Adobe Dreamweaver, Flash, and Photoshop. As part of a big family, we had to be resourceful, so my father and brothers would collect parts from various computers to build new setups or upgrade existing ones.",
+                    "As I grew up, my focus shifted from websites to music, particularly drumming. Drumming and coding are my two greatest passions. Recently, I decided to rekindle my interest in coding and joined a bootcamp. Shortly thereafter, I enrolled in college to study Full-Stack Web Development.",
+                    "I consider myself someone who values creating high-quality work. I have always been driven by a competitive spirit, constantly pushing myself to the limits and striving to excel in everything I do. I enjoy taking on challenges and solving problems, which is why I rediscovered my love for coding.",
+                    "Apart from coding, I love spending time in nature, whether it's going for hikes or simply enjoying the outdoors. Family and friends are also very important to me. I have a competitive streak when it comes to gaming, particularly in FPS and MMO genres. Additionally, I enjoy watching movies and exploring topics like psychology and astronomy through books and videos."
+                ]
+            },
+            "skills": {
+                "heading": "Skills and Resume",
+                "paragraph": "Here you can find a list of my skills. For more information about my professional background, please refer to my resume, which you can access here:",
+                "link": "/documents/cv-en.pdf"
+            }
+        }
+    },
+    "es": {
+        "name": "Español",
+        "navbar": {
+            "home": "Inicio",
+            "about": "Sobre mí",
+            "portfolio": "Proyectos",
+            "contact": "Contáctame"
+        },
+        "footer": {
+            "content": "Copyright © 2023-2024. Diseño y contenido por Ricardo Albarenque."
+        },
+        "hero": {
+            "subheading": "Hola, soy Ricardo Albarenque",
+            "heading": "Desarrollador Full-Stack",
+            "paragraph": "Actualmente viviendo en Asturias, España. He obtenido mi diploma en Desarrollo Web Full-Stack en City of Bristol College. Me apasionan los diseños perfectos al milímetro y el código reutilizable!",
+            "button": "Leer más"
+        },
+        "overview": {
+            "uxUi": {
+                "heading": "UX / UI",
+                "paragraph": "Creo diseños que son visualmente atractivos, totalmente responsive y accessibles. Asegurar una gran experiencia es una prioridad para mi, utilizando estándares de alta accesibilidad, mis diseños son inclusivos e intuitivos para el usuario."
+            },
+            "development": {
+                "heading": "Desarrollo",
+                "paragraph": "Me especializo en trabajar con TypeScript, React (Next) y Node. Estas tecnologías me permiten construir aplicaciones web dinámicas y eficientes."
+            },
+            "performance": {
+                "heading": "Rendimiento",
+                "paragraph": "Le doy gran importancia a escribir código que tenga buen rendimiento. A la vez que optimizo para eficiencia y velocidad, también priorizo que el código sea entendible y mantenible."
+            }
+        },
+        "portfolio": {
+            "heading": "Proyectos",
+            "buttonsLinks": {
+                "live": "Ver proyecto",
+                "repository": "Código"
+            },
+            "projects": [
+                {
+                    "id": 0,
+                    "name": "Tienda Black Dog",
+                    "description": "Tienda para productos de skateboard con un sistema de inicio de sesión. Permite a usuarios anónimos o registrados, realizar y pagar pedidos con la Stripe API. Los usuarios registrados tienen la posibilidad de guardar sus datos de envío y pueden revistar el historial de pedidos.",
+                    "image": "images/projects/black-dog-shop.png",
+                    "stack": [
+                        "Python",
+                        "Django",
+                        "SQLite",
+                        "Bootstrap",
+                        "Stripe",
+                        "AWS"
+                    ],
+                    "links": {
+                        "repository": "https://github.com/ricocatford/black-dog-shop",
+                        "live": "https://blackdogshop.herokuapp.com"
+                    }
+                },
+                {
+                    "id": 1,
+                    "name": "BonTeeth",
+                    "description": "Plataforma para reserva y manejo de citas con sistema de autentificación. Hay dos posibles casos de uso, como usuario normal (cliente) o como administrador (propietario del negocio). Si se requiere, puedo proveer los datos de la cuenta de administrador.",
+                    "image": "images/projects/bonteeth.png",
+                    "stack": ["Python", "Flask", "MaterializeCSS", "MongoDB"],
+                    "links": {
+                        "repository": "https://github.com/ricocatford/bonteeth-project",
+                        "live": "https://bonteeth.herokuapp.com"
+                    }
+                },
+                {
+                    "id": 2,
+                    "name": "Guess the Word",
+                    "description": "Juego interactivo para aprender vocabulario en inglés. Dada la descripción o una pista de la palabra, hay que adivinar las letras que faltan. El juego utiliza dos RESTful API libres.",
+                    "image": "images/projects/guess-the-word.png",
+                    "stack": ["JavaScript", "jQuery", "RESTful API"],
+                    "links": {
+                        "repository": "https://github.com/ricocatford/guess-the-word",
+                        "live": "https://ricocatford.github.io/guess-the-word/"
+                    }
+                }
+            ]
+        },
+        "contact": {
+            "heading": "¡Pongámonos en contacto y charlemos!",
+            "paragraph": "Si deseas contactarme, contratarme, o empezar un proyecto con mi ayuda, siempre estoy abierto a ideas y seguramente disfrute trabajando contigo. Debajo puedes escribirme un correo electrónico y encontrar las plataformas donde estoy, simplemente haz click en la pestaña que desees.",
+            "form": {
+                "name": "Nombre",
+                "email": "Dirección de correo",
+                "message": "Mensaje",
+                "confirmation": "Muchas gracias por contactarme. ¡Contestaré lo antes posible!",
+                "submit": "Enviar"
+            },
+            "github": {
+                "link": "Ver en GitHub"
+            },
+            "linkedin": {
+                "link": "Ver en LinkedIn"
+            }
+        },
+        "about": {
+            "bio": {
+                "paragraphs": [
+                    "¡Hola! Mi nombre es Ricardo Albarenque, pero siéntete libre de llamarme Rico. Nací en Argentina y crecí en España. Recientemente he regresado a España después de siete años en Londres.",
+                    "La tecnología siempre ha sido una parte de mi vida, empezando en mi niñez cuando tuve mi primer ordenador con Windows 98. Cuando mi familia se mudó a España durante mi adolescencia, empecé con el desarrollo de sitios web utilizando Adobe Dreamweaver, Flash y Photoshop. Como miembro de una familia numerosa, y con pocos recursos disponibles, mi padre y mis hermanos juntábamos piezas de ordenadores y armábamos o mejorábamos los que ya teníamos.",
+                    "Según iba creciendo, mi atención se inclinó más hacia la música, particularmente la percusión. Hace un par de años, me volví a interesar por la programación y me apunté a un bootcamp. Poco después, me apunté en formación profesional para estudiar Desarrollo Full-Stack. La batería y programación son mis dos pasiones en la vida.",
+                    "Me considero una persona que valora el trabajo de calidad. Siempre he tenido un carácter competitivo, constantemente mejorando y superando mis límites para destacar en todo lo que hago. Disfruto con los retos y resolviendo problemas, es por lo cuál descubrí mi pasión por la programación.",
+                    "Además de la programación, me gusta pasar tiempo en la naturaleza, tanto sea pasear haciendo rutas o simplemente disfrutando la naturaleza en sí. La familia y los amigos también son muy importantes y un gran apoyo. También suelo jugar competitivamente en videojuegos del género FPS y MMO. Adicionalmente, me encanta ver películas y aprender sobre psicología y astronomía a través de libros y documentales."
+                ]
+            },
+            "skills": {
+                "heading": "Habilidades y Currículum",
+                "paragraph": "Aquí puedes encontrar una lista de mis habilidades. Para más información de mi pasado profesional, por favor consulta mi currículum, al cual puedes acceder aquí:",
+                "link": "/documents/cv-es.pdf"
+            }
+        }
+    }
+}

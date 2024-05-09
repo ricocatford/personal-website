@@ -1,11 +1,15 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-import "../../assets/css/Navbar.css";
+import LanguageContext from "../../context/LanguageContext";
+
 import LanguageSelect from "./LanguageSelect";
 
+import "../../assets/css/Navbar.css";
+
 export default function Navbar() {
+    const { texts } = useContext(LanguageContext);
     const [toggle, setToggle] = useState(false);
 
     const closeMobileMenu = () => setToggle(false);
@@ -27,7 +31,7 @@ export default function Navbar() {
     return (
         <header>
             <nav className="navbar flex align-center">
-                <div className="navbar__container flex justify-between">
+                <div className="navbar__container flex">
                     <Link to="/" onClick={closeMobileMenu}>
                         <img
                             src="images/logo/logo.png"
@@ -35,7 +39,6 @@ export default function Navbar() {
                             className="navbar__logo"
                         />
                     </Link>
-                    {/* <LanguageSelect /> */}
                     <button
                         className="navbar__toggler"
                         onClick={() => setToggle(!toggle)}
@@ -62,7 +65,7 @@ export default function Navbar() {
                                 <span>
                                     <i className="fa-solid fa-house navbar__link__icon" />
                                 </span>
-                                Home
+                                {texts.navbar.home}
                             </Link>
                         </li>
                         <li>
@@ -74,7 +77,7 @@ export default function Navbar() {
                                 <span>
                                     <i className="fa-solid fa-id-card navbar__link__icon" />
                                 </span>
-                                About
+                                {texts.navbar.about}
                             </Link>
                         </li>
                         <li>
@@ -87,7 +90,7 @@ export default function Navbar() {
                                 <span>
                                     <i className="fa-solid fa-briefcase navbar__link__icon" />
                                 </span>
-                                Portfolio
+                                {texts.navbar.portfolio}
                             </HashLink>
                         </li>
                         <li>
@@ -100,9 +103,10 @@ export default function Navbar() {
                                 <span>
                                     <i className="fa-solid fa-paper-plane navbar__link__icon" />
                                 </span>
-                                Contact
+                                {texts.navbar.contact}
                             </HashLink>
                         </li>
+                        <LanguageSelect />
                     </ul>
                 </div>
             </nav>

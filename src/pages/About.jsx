@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+
+import LanguageContext from "../context/LanguageContext";
 
 import data from "../data/skills.json";
 
@@ -8,19 +11,19 @@ import Skills from "../components/about/Skills";
 import "../assets/css/About.css";
 
 export default function About() {
+    const { texts } = useContext(LanguageContext);
+
     return (
         <div className="container">
             <Bio />
-            <h3 className="subheading">Skills and Resume</h3>
+            <h3 className="subheading">{texts.about.skills.heading}</h3>
             <div className="flex skills__section">
                 <div className="skills__text__wrapper flex align-center">
                     <p className="skills__text">
-                        Here you can find a list of my skills. For more
-                        information about my professional background, please
-                        refer to my resume, which you can access here:
+                        {texts.about.skills.paragraph}
                     </p>
                     <Link
-                        to="/documents/resume.pdf"
+                        to={texts.about.skills.link}
                         download="ricardo-albarenque-cv"
                         target="_blank"
                         rel="noreferrer"

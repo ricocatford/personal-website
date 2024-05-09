@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 import "../../assets/css/Portfolio.css";
 
-export default function ProjectCard({ projects }) {
+export default function ProjectCard({ texts }) {
     return (
         <>
-            {projects.map((project) => (
+            {texts.portfolio.projects.map((project) => (
                 <div
                     className="flex justify-between project__card"
                     key={project.id}
@@ -39,7 +39,7 @@ export default function ProjectCard({ projects }) {
                                 className="btn btn--outline"
                                 target="_blank"
                             >
-                                Source Code
+                                {texts.portfolio.buttonsLinks.repository}
                                 <span>
                                     <i className="fa-solid fa-laptop-code btn__icon" />
                                 </span>
@@ -49,7 +49,7 @@ export default function ProjectCard({ projects }) {
                                 className="btn btn--primary"
                                 target="_blank"
                             >
-                                See Live
+                                {texts.portfolio.buttonsLinks.live}
                                 <span>
                                     <i className="fa-solid fa-arrow-up-right-from-square btn__icon" />
                                 </span>

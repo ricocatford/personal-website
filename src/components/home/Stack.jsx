@@ -17,11 +17,11 @@ export default function Stack() {
             </div>
             <div className="icon__wrapper text-center">
                 <img src="images/icons/nodejs.png" className="icon__img" />
-                <h4>NodeJS</h4>
+                <h4>Node.js</h4>
             </div>
             <div className="icon__wrapper text-center">
                 <img src="images/icons/reactjs.png" className="icon__img" />
-                <h4>ReactJS</h4>
+                <h4>React.js</h4>
             </div>
         </div>
     );

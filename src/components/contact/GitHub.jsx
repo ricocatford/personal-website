@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+
+import LanguageContext from "../../context/LanguageContext";
 
 import useGithubStats from "react-github-user-stats";
 
@@ -6,6 +9,7 @@ import { formatDate } from "../../functions/formatDate";
 import LoadingSpinner from "../template/LoadingSpinner";
 
 export default function GitHub() {
+    const { texts } = useContext(LanguageContext);
     const { error, loading, userData } = useGithubStats("ricocatford");
 
     if (loading || !userData) return <LoadingSpinner />;
@@ -68,7 +72,7 @@ export default function GitHub() {
                     target="_blank"
                     className="btn btn--primary"
                 >
-                    See on GitHub
+                    {texts.contact.github.link}
                     <i className="fa-solid fa-arrow-up-right-from-square btn__icon" />
                 </Link>
             </div>
