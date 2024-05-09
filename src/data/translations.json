@@ -88,6 +88,12 @@
                 "message": "Message",
                 "confirmation": "Thank you very much for getting in touch. I will reply as soon as possible!",
                 "submit": "Submit"
+            },
+            "github": {
+                "link": "See on GitHub"
+            },
+            "linkedin": {
+                "link": "See on LinkedIn"
             }
         },
         "about": {
@@ -196,6 +202,12 @@
                 "message": "Mensaje",
                 "confirmation": "Muchas gracias por contactarme. ¡Contestaré lo antes posible!",
                 "submit": "Enviar"
+            },
+            "github": {
+                "link": "Ver en GitHub"
+            },
+            "linkedin": {
+                "link": "Ver en LinkedIn"
             }
         },
         "about": {

@@ -5,6 +5,7 @@ import Form from "./Form";
 import GitHub from "./GitHub";
 
 import "../../assets/css/Contact.css";
+import LinkedIn from "./LinkedIn";
 
 export default function Contact() {
     const { texts } = useContext(LanguageContext);
@@ -14,7 +15,7 @@ export default function Contact() {
     const activeTabSelector = {
         mail: <Form />,
         github: <GitHub />,
-        linkedin: <h1>LinkedIn</h1>,
+        linkedin: <LinkedIn />,
     };
 
     return (
