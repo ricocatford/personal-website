@@ -7,7 +7,7 @@ export default function LinkedIn() {
     const { texts } = useContext(LanguageContext);
 
     return (
-        <div className="flex align-center justify-between">
+        <div className="linkedin__container">
             <Link
                 to="https://linkedin.com/in/ricardo-albarenque"
                 target="_blank"
